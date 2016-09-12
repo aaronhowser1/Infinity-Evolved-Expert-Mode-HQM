@@ -1,0 +1,508 @@
+{
+  "name": "Factorio",
+  "description": "You know what\u0027s boring? Manually doing things. This set is about automatically doing things.",
+  "quests": [
+    {
+      "name": "Ctrl X Ctrl V",
+      "description": "The Ender Quarry is an extremely useful block. When a border is defined, either by a square of fences or 3 Ender-Markers, it will request that you give it RF and an inventory to push items. Once all the requirements are met, it will start replacing every block from a few blocks above the square defined all the way down to y\u003d0, not including Bedrock.",
+      "x": 60,
+      "y": 14,
+      "icon": {
+        "id": "ExtraUtilities:enderQuarry"
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[Wazer Wifle]",
+        "{Actually Better Than Iron}[Meteor Hunter]",
+        "{Actually Better Than Iron}[Eating Skeletons]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Ender Quarry",
+          "longDescription": "Blocks mined are not destroyed, but replaced with Dirt. This is great for preventing lag, as no lighting or fluid updates are made whatsoever. If there is no inventory to push into, or if that inventory is full, the quarry will temporarily stop until there is room to push items into. For this reason, it is best to automate pulling items out of the quarry. Ender Chests are great for this, as you can have one Ender Chest at your Quarry, and the other at your ore processing.",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:enderQuarry"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fences? Really?",
+      "description": "Ender-Markers are the alternative to a square of fences to define the area an Ender Quarry will mine. Place the first one next to the Ender Quarry, and run in any cardinal direction. Make sure you run in a straight line. Once you\u0027ve forgotten how far away the quarry is, place down the Ender-Marker. If it is on either the same x or z coordinate, particles will come out of the Ender-Marker towards the main one. Go back to the quarry and do the same thing, but in a perpindicular direction. Distance between Ender-Markers does nothing except give you more materials. As far as I know, there is no limit to how far away it can be. Although, do make sure nobody\u0027s base is in the middle, that would be rude.",
+      "x": 22,
+      "y": 14,
+      "icon": {
+        "id": "ExtraUtilities:endMarker"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Quadratic Elephant Destroyer]",
+        "Ctrl X Ctrl V"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make 3 Ender-Markers",
+          "longDescription": "Once the 3 are placed correctly, right click on the Ender Quarry and it will try to define an area. If it works, congrats. If it doesn\u0027t, one of the Ender-Markers isn\u0027t in the right place.",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:endMarker"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Upgrades",
+      "description": "An Ender Quarry can be upgraded by placing Ender Quarry Upgrades next to it. Different Upgrades do different things, and come with different costs. These costs are a multiplier, as in it multiplies how much RF it requires instead of adding.",
+      "x": 60,
+      "y": 49,
+      "icon": {
+        "id": "ExtraUtilities:enderQuarryUpgrade"
+      },
+      "prerequisites": [
+        "Ctrl X Ctrl V",
+        "{Actually Better Than Iron}[Quadratic Elephant Destroyer]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Ender Quarry Upgrade Base",
+          "longDescription": "If you have a good ore processing system, I would recommend Silk Touch instead of Fortune III. Silk Touch has a 1.5x cost multiplier, while Fortune III has an 80x cost multiplier.",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:enderQuarryUpgrade"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Who Took My Mountain?",
+      "description": "The BC Quarry uses RF to mine an area down to Bedrock. By default, it has an area of 9x9x4. Once it has RF, it starts to clear the area required and build the frame. Once that happens, it starts mining and putting the blocks into the inventory or pipe above it. If none is available, it is spit out at extreme velocity and gets all over the floor, and generally takes a while to mop up.",
+      "x": 126,
+      "y": 13,
+      "icon": {
+        "id": "BuildCraft|Builders:machineBlock"
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[Wazer Wifle]",
+        "{Actually Better Than Iron}[Meteor Hunter]",
+        "{Actually Better Than Iron}[Eating Skeletons]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Quarry",
+          "longDescription": "The Quarry is not upgradable. A Redstone signal will turn it off. The more RF you give it, the faster it goes. The Quarry gets a bit confused with Lava, so try to Pump that out sharpish.",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Builders:machineBlock"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Excavatorium",
+      "description": "The Excavator \"mines\" ores that are in Mineral Deposits. Mineral Deposits cannot be found in any way except for using a Core Sample Drill. Place the Core Sample Drill anywhere in the world, and power it. Mineral Deposits are per chunk, and as such you might have to explore quite a bit before you find a chunk with a Mineral Deposit.",
+      "x": 188,
+      "y": 13,
+      "icon": {
+        "id": "ImmersiveEngineering:tool"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Dwayne \"The Rock\" Crusher]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Core Sample Drill",
+          "longDescription": "Hit F9 to see chunk borders. If the chunk you are in doesn\u0027t have an Ore Deposit, go one chunk over and repeat. An entire Ore Deposit has roughly a Diamond Chest or more\u0027s worth of ores.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDevice",
+                "damage": 14
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Set up Excavator",
+          "longDescription": "See the Heavy Machinery tab of your Engineer\u0027s Manual to find out how to make the multblock.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:storage",
+                "damage": 7
+              },
+              "required": 21,
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDecoration",
+                "damage": 7
+              },
+              "required": 9
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDecoration",
+                "damage": 5
+              },
+              "required": 13
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDecoration",
+                "damage": 1
+              },
+              "required": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Boring",
+      "description": "The Tunnel Bore is a special machine. It acts like a Minecraft, in that it needs to be on tracks. Put Gravel into the Ballast slots, and it will place the Gravel if it ever comes accross a hole that it would usually fall into. Put Tracks into the Track slots so that it can place them in front of it and keep going. The Bore Head tiers are Iron \u003c Steel \u003c Diamond. Diamond is the only one that can mine Obsidian, and will dig a 700 block long tunnel.",
+      "x": 239,
+      "y": 13,
+      "icon": {
+        "id": "Railcraft:cart.bore"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[The Brotherhood of _____]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Tunnel Bore",
+          "longDescription": "Any fuel that would work in a furnace will work in the Fuel slots. Coal Coke is the best for this reason.",
+          "items": []
+        },
+        {
+          "type": "DETECT",
+          "description": "Attatch some Chest Carts",
+          "longDescription": "By default, the Tunnel Bore will just spit out the blocks mined into the world behind it. If you place a Chest Cart behind it and shift right click the Chest Cart and the Tunnel Bore with any Railcraft Crowbar, they will be linked. Once linked, items are pushed into that chest instead. You can do this with many chests to extend the inventory space.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:chest_minecart"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Raveyard",
+      "description": "The Division Sigil can be gotten either by killing a Wither or finding it randomly in a Dungeon chest. To activate it, place an Enchanting Table on the ground on grass. Surround it by 8 Redstone Dust, and make sure there is no outside light sources. When the moon is at it\u0027s zenith, kill a mob nearby. This will convert a lot of the nearby Grass into Cursed Earth. Cursed Earth only spawns mobs that usually would spawn there. For instance, to spawn Blazes and Wither Skeletons, you would need to put the Cursed Earth in a Nether Fortress.",
+      "x": 269,
+      "y": 78,
+      "icon": {
+        "id": "ExtraUtilities:cursedearthside"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Collect Cursed Earth",
+          "longDescription": "Cursed Earth is reverted back to Dirt if dug with a shovel that does not have Silk Touch, or if there is a fire nearby, or if it can see the sunlight. Cursed Earth spawns a ton of very powerful mobs buffed with potion effects, so be quick about Silk Touching one and putting it somewhere safe. Non-fire light, such as Glowstone or Redstone Lamps disables Cursed Earth without destroying it. That way, you can Silk Touch some, put it in a room lit with Glowstone, and let it spread to nearby Dirt and mine the new Cursed Earth for use in mob farms.",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:cursedearthside"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arm\u0027s Length, Please",
+      "description": "The MFR Grinder instantly kills regular mobs like Creepers, Skeletons, Zombies, and Wither Skeletons. It uses RF to run, and each mob kill produces some Mob Essence.",
+      "x": 246,
+      "y": 78,
+      "icon": {
+        "id": "MineFactoryReloaded:machine.0",
+        "damage": 13
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Alloys]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Grinder",
+          "longDescription": "If you put a pipe or inventory on the back of the Grinder, then items are put in there. The Grinder has a range of 5x5x3, which cannot be upgraded.",
+          "items": [
+            {
+              "item": {
+                "id": "MineFactoryReloaded:machine.0",
+                "damage": 13
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Too Old to Play With Dollies",
+      "description": "The PortaSpawner is a one-use item to move a spawner. This is very useful, for instance, if you want to move a Blaze Spawner to your Overworld mob farm.",
+      "x": 258,
+      "y": 60,
+      "icon": {
+        "id": "MineFactoryReloaded:portaspawner"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Alloys]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a PortaSpawner",
+          "longDescription": "Right click on a spawner to pick it up, and then right click it somewhere else to place it down. After placing it, it will disappear, which means you will have to make another one to use it again.",
+          "items": [
+            {
+              "item": {
+                "id": "MineFactoryReloaded:portaspawner"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Butcher Pete",
+      "description": "The Killer Joe is a special machine that uses any sword that you place inside of it to kill mobs in a 5x5x4 area in front of it. While you can\u0027t put Tinkers\u0027 Construct weapons in it, most other swords work. Enchantments applied to the sword also take effect, but the sword takes durability damage as if it was used like normal. Mobs are not instantly killed, but have to be attacked the same amount of times as usual using the sword inside of it. Beware, mobs will attack the Killer Joe if they survive the first attack, which means that Creepers will explode and Blazes will light things on fire. Use with caution.",
+      "x": 280,
+      "y": 61,
+      "icon": {
+        "id": "EnderIO:blockKillerJoe"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Bound to Your Will]",
+        "{Actually Better Than Iron}[Cut\u0027N\u0027Chop]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Killer Joe",
+          "longDescription": "The Killer Joe does not use RF or EU, but instead requires Nutrient Distillation be pumped into it. 1400mB is required to function, but it can store up to 2000mB. Experience gets sucked into it, which can be pumped out or put into your own XP, while items are left on the ground to be collected with a Vacuum Hopper or similar methods.",
+          "items": [
+            {
+              "item": {
+                "id": "EnderIO:blockKillerJoe"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Safari Zone",
+      "description": "The Auto-Spawner uses RF and Mob Essence to spawn the mob inside of the Safari Net. ",
+      "x": 258,
+      "y": 97,
+      "icon": {
+        "id": "MineFactoryReloaded:machine.1",
+        "damage": 9
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Dwayne \"The Rock\" Crusher]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Safari Net + Launcher",
+          "longDescription": "Shift right click the Safari Net Launcher to set it to Catch Mode. If you have a Safari Net in your inventory and you shoot it at a mob, it will be put into the Safari Net.",
+          "items": [
+            {
+              "item": {
+                "id": "MineFactoryReloaded:safarinet.launcher"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "MineFactoryReloaded:safarinet.reusable"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make the Auto-Spawner",
+          "longDescription": "The Exact Copy mode uses more RF and Mob Essence, but spawns an exact copy of the mob you caught. This means if you caught something with low health, the mobs spawned will have low health. If you caught a Wither Skeleton, Wither Skeletons will be spawned in the Overworld.",
+          "items": [
+            {
+              "item": {
+                "id": "MineFactoryReloaded:machine.1",
+                "damage": 9
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Capacitative Spawning",
+      "description": "The Powered Spawner is, well, an RF-powered spawner. To set the mob, you have to combine it with a Broken Spawner (which is gotten by mining a Spawner) in an Anvil, which takes about 30 levels.",
+      "x": 290,
+      "y": 81,
+      "icon": {
+        "id": "EnderIO:blockPoweredSpawner"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Cut\u0027N\u0027Chop]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get the Broken Spawner",
+          "longDescription": "You can mine a vanilla Spawner to get a Broken Spawner. If you want to get a different mob\u0027s Spawner, you can combine it with a filled Soul Vial in an Anvil to set the Broken Spawner to the mob inside of the Vial.",
+          "items": [
+            {
+              "item": {
+                "id": "EnderIO:itemBrokenSpawner",
+                "nbt": "{mobType:\"Skeleton\"}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make the Powered Spawner",
+          "longDescription": "Combine the Broken Spawner and Powered Spawner in the Anvil to set the Powered Spawner to that mob. It runs on RF only, and can be upgraded with Double-Layer or Octadic Capacitors, which makes it faster and has more RF capacity.",
+          "items": [
+            {
+              "item": {
+                "id": "EnderIO:blockPoweredSpawner"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Soul Shards",
+      "description": "Right clicking any vanilla Spawner with a Draconic Core will turn it into a Stabilized Mob Spawner, which can be broken and moved. By default, it does not actually spawn anything. Right click it with a Mob Soul to set the Spawner to spawn that mob. Unupgraded, the Stabilized Spawner works roughly the same as a regular Spawner.",
+      "x": 278,
+      "y": 96,
+      "icon": {
+        "id": "DraconicEvolution:draconicCore"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get the Stabilized Spawner",
+          "longDescription": "Mob Souls have a 1/1000 chance of dropping upon the death of a mob. This is made more likely by the Reaper enchantment. Any Mob Soul will complete this quest, not just pigs. Shift right click it to see what upgrades you can give it. A redstone signal will disable the spawner. If you break the spawner, it and every upgrade except for the Mob Soul will be dropped.",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:customSpawner"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "DraconicEvolution:mobSoul"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Drill From the Heavens",
+      "description": "The Laser Drill doesn\u0027t actually mine, per se. Instead, it essentially turns RF into ores. There are some slots that you can put colored Laser Focii to increase the chance of getting certain ores. Hit U on the Focii to see which ores they increase the chance of getting.",
+      "x": 188,
+      "y": 54,
+      "icon": {
+        "id": "MineFactoryReloaded:machine.2"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Eating Skeletons]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Laser Precharger",
+          "longDescription": "The RF does not go directly into the Laser Drill. Instead it goes into the Laser Drill Prechargers, which shoot into the Laser Drill. Place up to 4 around the Laser Drill with 1 block away, so that the side with the hole is facing the Laser Drill. Don\u0027t get into the beam, it stings!",
+          "items": [
+            {
+              "item": {
+                "id": "MineFactoryReloaded:machine.2",
+                "damage": 1
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Set up the Laser Drill",
+          "longDescription": "Place the Laser Drill 1 block below the build limit, so you can place a chest on it to collect the materials. The higher you place it, the less RF it requires. The Laser Drill must have either Void or Bedrock underneath it, nothing else. That means you must dig directly below it until it hits Bedrock, or place it somewhere that has access to the Void. ",
+          "items": [
+            {
+              "item": {
+                "id": "MineFactoryReloaded:machine.2"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Not Big Enough",
+      "description": "By default, the Quarry mines a rather small area. With only 3 Landmarks, that area can be as large as 62x62!",
+      "x": 127,
+      "y": 51,
+      "icon": {
+        "id": "BuildCraft|Core:markerBlock"
+      },
+      "prerequisites": [
+        "Who Took My Mountain?"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make 3 Landmarks",
+          "longDescription": "If you give a Landmark a Redstone signal, it\u0027ll show the max distance it can reach. Place 2 other Landmarks on perpindicular lines, and then right click the middle one. Once the red square is defined, place a quarry one block next to it, and it will be replaced with the quarry defining lines. Feed it power, and the frame (and therefore, the mining area) will be much much larger.",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Core:markerBlock"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

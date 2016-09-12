@@ -1,1 +1,0 @@
-Fixed some early quests, they should now ignore NBT so any Pattern Storage / Stencil Table / any of the other things should work.

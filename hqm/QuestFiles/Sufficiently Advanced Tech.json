@@ -1,0 +1,517 @@
+{
+  "name": "Sufficiently Advanced Tech",
+  "description": "Magic! In this set you\u0027ll learn to fly around in your pink pixie tutu while losing your sanity and draining skeletons of their blood.",
+  "quests": [
+    {
+      "name": "Entrance to the Arcane",
+      "description": "Thaumcraft: Where even the most logical man becomes a gibbering mess, and loves every second of it.",
+      "x": 58,
+      "y": 13,
+      "icon": {
+        "id": "Thaumcraft:ItemThaumonomicon"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get the Thaumonomicon",
+          "longDescription": "Make an Iron Capped Wooden Wand and right click a bookshelf with it to get the Thaumonomicon, Thaumcraft\u0027s Guide Book. Some things may not be accurate, as Infinity Expert Mode changes some recipes.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemThaumonomicon"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flower Child",
+      "description": "The Lexica Botania, while innacurate in recipes, explains how Botania\u0027s mechanics work.",
+      "x": 26,
+      "y": 14,
+      "icon": {
+        "id": "Botania:lexicon"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get the Lexica Botania",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:lexicon"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Petals and Water",
+      "description": "The Petal Apothecary is how most Botanical flowers are created.",
+      "x": 26,
+      "y": 45,
+      "icon": {
+        "id": "Botania:altar"
+      },
+      "prerequisites": [
+        "Flower Child"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Petal Apothecary",
+          "longDescription": "The Petal Apothecary works same as allways, give it water and put the correct ingredients in, and then throw in Seeds. Interesting thing that many don\u0027t know, you can shift right click it with an empty hand while it\u0027s filled with water and you automatically put in the ingredients from the last thing you made.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:altar"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Life Through Flowers",
+      "description": "Some more of the mechanics added by Botania, mainly storing, moving, and using Mana.",
+      "x": 26,
+      "y": 74,
+      "icon": {
+        "id": "Botania:pool"
+      },
+      "prerequisites": [
+        "Petals and Water"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Pure Daisy",
+          "longDescription": "The Pure Daisy turns Stone into Livingrock and logs into Livingwood. These are very useful for crafting, and look quite nice for building. ",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"puredaisy\"}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make a Mana Spreader",
+          "longDescription": "Mana Spreaders are how you move Mana. Put it down, shift right click a Wand of the Forest in Bind Mode first on the Mana Spreader and then on the Mana Pool. Mana generating flowers bound to the Mana Spreader put the Mana in there, and then the Mana Spreader puts it into the Mana Pool, or whatever else it\u0027s pointed at.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:spreader"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make a Mana Pool",
+          "longDescription": "The Mana Pool is arguably the most important thing made by Livingrock. It is used to store Mana, which many things from Botania use as energy. You can craft things with it by throwing the ingredient in.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:pool"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make a Runic Altar",
+          "longDescription": "The Runic Altar is another of the crafting mechanics Botania offers. It requires you point a Mana Spreader at it, and then you throw all the ingredients onto it. Once it\u0027s done filling up with Mana, throw a Livingrock on it and right click it with a Wand of the Forest.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:runeAltar"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crafting Like a Magician",
+      "description": "The Arcane Worktable is one of the ways Thaumcraft adds for crafting things. Some things require Essentia in your wand, which you get by holding right click on a Node. See your Basic Information tab of the Thaumonomicon for details.",
+      "x": 59,
+      "y": 43,
+      "icon": {
+        "id": "Thaumcraft:blockTable",
+        "damage": 15
+      },
+      "prerequisites": [
+        "Entrance to the Arcane"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get an Arcane Worktable",
+          "longDescription": "Right Click a Thaumcraft Table with a Wand to get the Arcane Worktable",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable",
+                "damage": 15
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Witches Oven",
+      "description": "The Witches Oven is how you get special Witchery Ingredients. Put Clay Jars in, some furnace fuel, and then saplings. Different saplings give different ingredients, as shown by NEI.",
+      "x": 60,
+      "y": 75,
+      "icon": {
+        "id": "witchery:witchesovenidle"
+      },
+      "prerequisites": [
+        "Crafting Like a Magician",
+        "Life Through Flowers"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Witches Oven",
+          "longDescription": "The Witches Oven requires Arcane Worktable crafting and Mana Pool conversion to make.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:witchesovenidle"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nature\u0027s Magic",
+      "description": "The Witchery Altar gains Altar Power by having more nature stuff around it. You can also place stuff on top like a Wither Skull or a Candelabra. Check the wiki to see what is best.",
+      "x": 60,
+      "y": 105,
+      "icon": {
+        "id": "witchery:altar"
+      },
+      "prerequisites": [
+        "The Witches Oven"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Set up the Altar",
+          "longDescription": "The Altar is a 3x2x1 multiblock",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:altar"
+              },
+              "required": 6,
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blood for the Blood God",
+      "description": "The Blood Altar is probably the most important part of Blood Magic. This will eventually be a giant multiblock. At the largest tier, tier 6, it takes up a 23x23x9 space.",
+      "x": 60,
+      "y": 135,
+      "icon": {
+        "id": "AWWayofTime:Altar"
+      },
+      "prerequisites": [
+        "Nature\u0027s Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Set up the Blood Altar",
+          "longDescription": "I recommend checking the wiki and building the altar out of cobblestone, replacing it with what it actually needs as you get the blocks.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:Altar"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Get the Sacrificial Orb",
+          "longDescription": "The Sacrificial Orb, when right clicked near a Blood Altar, removes a heart from your health and gives some Life Essence to the Altar.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:sacrificialKnife",
+                "nbt": "{sacrifice:0b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "So Many Altars",
+      "description": "The final altar on the list, the Infusion Altar from Thaumcraft. ",
+      "x": 60,
+      "y": 164,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Blood for the Blood God"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Set up the Infusion Altar",
+          "longDescription": "See Infusion in the Artifice tab in your Thaumonomicon for more information on the Infusion Altar.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockCosmeticSolid",
+                "damage": 6
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockCosmeticSolid",
+                "damage": 7
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tea\u0027s On!",
+      "description": "The Kettle is used to craft similar to Thaumcraft\u0027s Crucible. Set a fire underneath it (preferably using Netherrack), give it some water, and throw in the ingredients. Be extremely careful that you put in the correct ingredients, as they cannot be gotten back if you make a mistake, and some recipes are incredibly complicated. If the Kettle starts emitting white swirls and making noises, the brew is ready to take out. Right click with an empty bottle to bottle it.",
+      "x": 88,
+      "y": 74,
+      "icon": {
+        "id": "witchery:kettle"
+      },
+      "prerequisites": [
+        "The Witches Oven"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Kettle",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:kettle"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Moonshine and Sunshine",
+      "description": "The Distillery is yet another crafting mechanic from Witchery. It uses Altar Power to function, so it must be placed near an Altar with sufficient Altar Power.",
+      "x": 88,
+      "y": 105,
+      "icon": {
+        "id": "witchery:distilleryidle"
+      },
+      "prerequisites": [
+        "Nature\u0027s Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Distillery",
+          "longDescription": "Place Clay Jars in the bottom slot, and the 2 ingredients in the slots above. The results are put into the slots to the right.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:distilleryidle"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The World of Elves",
+      "description": "The Portal to Alfheim is a multiblock. It requires a pretty steady stream of Mana. The crafting recipe requires a tier 4 Blood Altar minimum.",
+      "x": 122,
+      "y": 134,
+      "icon": {
+        "id": "Botania:alfheimPortal"
+      },
+      "prerequisites": [
+        "Blood for the Blood God",
+        "Moonshine and Sunshine",
+        "Tea\u0027s On!"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Set up the Portal to Alfheim",
+          "longDescription": "Right click on the Elven Gateway Core to activate the Portal. Throw in certain items in to get other certain items out. See NEI or the Lexica Botania for details.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:pool"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "Botania:pylon",
+                "damage": 1
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "Botania:livingwood"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "Botania:livingwood",
+                "damage": 5
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "Botania:alfheimPortal"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stabbing the Earth",
+      "description": "The Guardian of Gaia fight gives pretty good drops, which are used in certain crafting recipes. To make the Gaia Pylons, you need at least a Tier 5 Blood Altar.",
+      "x": 122,
+      "y": 169,
+      "icon": {
+        "id": "Botania:pylon",
+        "damage": 2
+      },
+      "prerequisites": [
+        "The World of Elves"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Set up Guardian of Gaia arena",
+          "longDescription": "See the upgraded Lexica Botania for details on how to make the arena.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:beacon"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:pylon",
+                "damage": 2
+              },
+              "required": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "...orcloth Strapped Silv...",
+      "description": "The Ultimate. The Alpha. The best dang wand this modpack has to offer. 1000 Essentia Capacity, 70% vis cost, a name that is 52 characters long! What CAN\u0027T this wand do?!",
+      "x": 60,
+      "y": 195,
+      "icon": {
+        "id": "Thaumcraft:WandCasting",
+        "damage": 100,
+        "nbt": "{cap:\"ICHOR\",rod:\"ICHORCLOTH\"}"
+      },
+      "prerequisites": [
+        "So Many Altars"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "To unlock Ichor research, you need to research ALL of regular Thaumcraft, and ALL non-Ichor related Thaumic Tinkerer research.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandCasting",
+                "damage": 100,
+                "nbt": "{cap:\"ICHOR\",rod:\"ICHORCLOTH\"}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "I Can Make What Now?!",
+      "description": "You did it! You beat Infinity Evolved: Expert Mode! You now have the ultimate bragging rights.",
+      "x": 92,
+      "y": 195,
+      "icon": {
+        "id": "Botania:pool",
+        "damage": 1
+      },
+      "prerequisites": [
+        "...orcloth Strapped Silv...",
+        "Stabbing the Earth",
+        "{Shashaying with Wyverns}[Ocean in a Block]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Creative Mana Pool",
+          "longDescription": "As one of the most powerful things available, this block has an INCREDIBLY hard recipe. It requires multiple very hard boss drops, every Botanical Rune, a fully charged Ichorium Adorned Ichorcloth Strapped Silverwood Wand, every Slate up to tier 5, and other stuff I guess. This block is an infinite source of Mana. Expect the infusion to last more than 20 minutes. Make ABSOLUTE SURE that your Infusion altar is as diddly-darn stable as it can be. Gaia Pylons are really good for stability.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:pool",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

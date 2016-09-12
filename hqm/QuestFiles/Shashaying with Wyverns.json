@@ -1,0 +1,838 @@
+{
+  "name": "Shashaying with Wyverns",
+  "description": "The end-all be-all of Expert Mode. This set is all about Draconic Evolution, and the things it unlocks.",
+  "quests": [
+    {
+      "name": "Customizing Your Custom Worlds",
+      "description": "In order to define how your dimension is generated, you can use Dimlets. A good source of Unkown Dimlets is a large mob farm. For the most part, Dimlets can go into the Dimension Inscriber in any order. However, Material and Liquid Dimlets MUST go in the slot just before thing they are supposed to modify. For instance, having Large Spheres of Diamond Blocks, you would need to have the Diamond Blocks Material Dimlet in the slot 1 to the left of the Large Spheres Dimlet.",
+      "x": 76,
+      "y": 125,
+      "icon": {
+        "id": "rftools:unknownDimlet"
+      },
+      "prerequisites": [
+        "World Hopping"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Dimlet Researcher",
+          "longDescription": "Put the Unknown Dimlet into the Dimlet Researcher to learn what it does.",
+          "items": [
+            {
+              "item": {
+                "id": "rftools:dimletResearcherBlock"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "F5 F5 F5 F5 F5 F5 F5 ",
+      "description": "Sometimes you get a bunch of really useless Dimlets that you don\u0027t want. You can put 3 into a Dimlet Scrambler and they will be destroyed and give you one random Dimlet.",
+      "x": 55,
+      "y": 125,
+      "icon": {
+        "id": "rftools:dimletScramblerBlock"
+      },
+      "prerequisites": [
+        "Customizing Your Custom Worlds"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Dimlet Scrambler",
+          "items": [
+            {
+              "item": {
+                "id": "rftools:dimletScramblerBlock"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "World Hopping",
+      "description": "RFTools dimensions are extremely RF intensive. Don\u0027t forget to bring a Porter!",
+      "x": 98,
+      "y": 124,
+      "icon": {
+        "id": "rftools:dimensionBuilderBlock"
+      },
+      "prerequisites": [
+        "The Endest of End Games"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Realize a Random Dimension",
+          "longDescription": "Without Dimlets, Dimensions are entirely random as far as traits go. Twilight Forest biome with multicolored Hardened Clay? Anything can happen. The Dimension Enscriber doesn\u0027t require RF, just an Empty Dimension Tab. Put that in, and if you have any Dimlets you want, stick those in too. Click \"Store\" to make the dimension.",
+          "items": [
+            {
+              "item": {
+                "id": "rftools:dimensionEnscriberBlock"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Power up the Dimension",
+          "longDescription": "Put the Realized Dimension Tab into the Dimension Builder. Dimensions require a ton of RF to build for the first time, and then continued RF to keep it on. The more complicated or intense the Dimension, the more RF it takes.",
+          "items": [
+            {
+              "item": {
+                "id": "rftools:dimensionBuilderBlock"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "This Is Going To Be Easy!",
+      "description": "These Cores are the  base ingredients for most recipes.",
+      "x": 158,
+      "y": 17,
+      "icon": {
+        "id": "DraconicEvolution:wyvernCore"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Alloys]",
+        "{Sufficiently Advanced Tech}[Life Through Flowers]",
+        "{Sufficiently Advanced Tech}[Crafting Like a Magician]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Draconic Core",
+          "longDescription": "The Draconic Core is probably the easiest thing you will ever craft in this Draconic Evolution",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:draconicCore"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make the Wyvern Core",
+          "longDescription": "The Wyvern Core is 4 times the probable easiest thing you will make in Draconic Evolution, plus other stuff.",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:wyvernCore"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Need This and This and This...",
+      "description": "Mana Dust is required to make certain things in Draconic Evolution. It\u0027s so confusing to make, I spelled it out for you here.",
+      "x": 278,
+      "y": 17,
+      "icon": {
+        "id": "ThermalFoundation:material",
+        "damage": 516
+      },
+      "prerequisites": [
+        "This Is Going To Be Easy!"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Mana Dust",
+          "longDescription": "360mB of Primal Mana is required to make 1 Mana Dust. the smallest amount you can make at a time is 576mB. This takes 1 Ardite Ingot, 2 Obsidian blocks, 144mB of TiCon Blood, 1 Cobalt Ingot, 1 Iron Ingot, 4 Draconium Ingots, and 2,000mB of OpenBlocks Liquid XP.",
+          "items": [
+            {
+              "item": {
+                "id": "ThermalFoundation:material",
+                "damage": 516
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Diggy Diggy Hole",
+      "description": "The Pickaxe of the Wyvern is one of the best pickaxes in the game.  Check you Controls for \"Tool and Armour Config GUI\", and press that. Click the Pickaxe of the Wyvern, and you can modify the dig speed multiplier, area of effect, and whether or not it stops you from digging Tile Entities. The \"Inv\" tab allows you to place Enchanted Books into the item, which will enchant it. You can later remove these if you want.",
+      "x": 278,
+      "y": 75,
+      "icon": {
+        "id": "minecraft:diamond_pickaxe"
+      },
+      "prerequisites": [
+        "Need This and This and This..."
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Pickaxe of the Wyvern",
+          "longDescription": "I swear the only reason I\u0027m using a Diamond Pickaxe for the icon is because the Pickaxe of the Wyvern shows up as blank. It\u0027s not my fault, I swear!",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:wyvernPickaxe",
+                "nbt": "{Energy:0,ConfigProfiles:[0:{},1:{},2:{},3:{},4:{}]}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Sword in the Lake",
+      "description": "The Sword of the Wyvern is one of the most powerful ranged weapons in the game. Check you Controls for \"Tool and Armour Config GUI\", and press that. Click the Sword of the Wyvern, and you can change the AoE, similar to the TiCon Scythe.",
+      "x": 278,
+      "y": 132,
+      "icon": {
+        "id": "DraconicEvolution:wyvernSword",
+        "nbt": "{Energy:0}"
+      },
+      "prerequisites": [
+        "Need This and This and This..."
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Sword of the Wyvern",
+          "longDescription": "In addition to the 20 attack damage (10 hearts), an additional 10% of the mob\u0027s health is removed. This means most mobs can be defeated in 10 hits or less, except for certain bosses that cap out damage like the Guardian of Gaia.",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:wyvernSword",
+                "nbt": "{Energy:0,ConfigProfiles:[0:{},1:{},2:{},3:{},4:{}],ConfigProfile:1}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "I Swear There Was Dirt Here",
+      "description": "The Shovel of the Wyvern is one of the best pickaxes in the game.  Check you Controls for \"Tool and Armour Config GUI\", and press that. Click the Shovel of the Wyvern, and you can modify the dig speed multiplier, area of effect, and whether or not it stops you from digging Tile Entities. The \"Inv\" tab allows you to place Enchanted Books into the item, which will enchant it. You can later remove these if you want.",
+      "x": 278,
+      "y": 103,
+      "icon": {
+        "id": "minecraft:diamond_shovel"
+      },
+      "prerequisites": [
+        "Need This and This and This..."
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Shovel of the Wyvern",
+          "longDescription": "I swear the only reason I\u0027m using a Diamond Shovel for the icon is because the Shovel of the Wyvern shows up as blank. It\u0027s not my fault, I swear!",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:wyvernShovel",
+                "nbt": "{Energy:0,ConfigProfiles:[0:{BaseSafeAOE:0b},1:{},2:{},3:{},4:{}]}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ratatatatatata",
+      "description": "The Bow of the Wyvern is one of the most powerful ranged weapons in the game. Check you Controls for \"Tool and Armour Config GUI\", and press that. Click the Bow of the Wyvern, and you can modify several values. The more powerful you make the bow, the more RF it takes per shot. The \"Inv\" tab allows you to place Enchanted Books into the item, which will enchant it. You can later remove these if you want.",
+      "x": 278,
+      "y": 47,
+      "icon": {
+        "id": "DraconicEvolution:wyvernBow",
+        "nbt": "{Energy:0}"
+      },
+      "prerequisites": [
+        "Need This and This and This..."
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Bow of the Wyvern",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:wyvernBow",
+                "nbt": "{Energy:0,ConfigProfiles:[0:{BowArrowSpeedModifier:1.0f,BowAutoFire:1b,BowExplosionPower:4.0f},1:{},2:{},3:{},4:{}]}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Here to There",
+      "description": "The Charm of Dislocation allows you to teleport from anywhere in any dimension to a specific location for absolutely no cost. However, it can only have one location, and cannot be rebound. Shift right click to save the coords, dimension, and direction you are looking. Right click anywhere else to teleport there.",
+      "x": 123,
+      "y": 37,
+      "icon": {
+        "id": "DraconicEvolution:teleporterMKI"
+      },
+      "prerequisites": [
+        "This Is Going To Be Easy!"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Charm of Dislocation",
+          "longDescription": "You don\u0027t have to look at a block while binding it, otherwise you would be looking straight down when you teleport there. Just look straight ahead, or the direction you want to be looking when you teleport there.",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:teleporterMKI"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wyverns Don\u0027t Have Arms",
+      "description": "Wyvern armor some of the most powerful armor in Expert Mode. The Leggings and Boots of the Wyvern can be configured to let you run and jump faster and higher, and you can set it to only do so while sprinting.",
+      "x": 278,
+      "y": 193,
+      "icon": {
+        "id": "DraconicEvolution:wyvernChest",
+        "nbt": "{Energy:950173,ShieldEntropy:48.52304f,ProtectionPoints:80.0f}"
+      },
+      "prerequisites": [
+        "Need This and This and This..."
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Wyvern Armor",
+          "longDescription": "While the Wyvern armor has RF, it produces shield. This shield works as essentially extra health, a buffer before your actual health is damaged.",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:wyvernHelm",
+                "nbt": "{Energy:1000000}"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "DraconicEvolution:wyvernChest",
+                "nbt": "{Energy:1000000}"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "DraconicEvolution:wyvernLeggs",
+                "nbt": "{Energy:1000000}"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "DraconicEvolution:wyvernBoots",
+                "nbt": "{Energy:1000000}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Putting the \"God\" in \"Gaudy\"",
+      "description": "Draconic armor is the most powerful armor in the modpack. It allows you to fly, see in the dark, see Nodes, jump high, run fast, and step up single blocks. Wearing charged Draconic armor, you are nearly invincible; you can even survive an IC2 Nuke point-blank.",
+      "x": 232,
+      "y": 193,
+      "icon": {
+        "id": "DraconicEvolution:draconicChest",
+        "nbt": "{Energy:0}"
+      },
+      "prerequisites": [
+        "Wyverns Don\u0027t Have Arms",
+        "The Endest of End Games"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Draconic Armor",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:draconicHelm",
+                "nbt": "{Energy:0}"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "DraconicEvolution:draconicChest",
+                "nbt": "{Energy:0}"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "DraconicEvolution:draconicLeggs",
+                "nbt": "{Energy:0}"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "DraconicEvolution:draconicBoots",
+                "nbt": "{Energy:0,ConfigProfiles:[0:{},1:{},2:{},3:{},4:{}]}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Upgrading Your Machines",
+      "description": "Dimensional Shards only spawn in RFTools Dimensions. These Shards allow you to upgrade your machines. Hold Shift on a machine to see what Infusing the Shards into them will do.",
+      "x": 88,
+      "y": 144,
+      "icon": {
+        "id": "rftools:machineInfuserBlock"
+      },
+      "prerequisites": [
+        "World Hopping"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Machine Infuser",
+          "longDescription": "Put the Shards in the slot to the left, and the machine into the slot to the right. It may take more than a stack to fully Infuse the machine.",
+          "items": [
+            {
+              "item": {
+                "id": "rftools:machineInfuserBlock"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Who Said the Wither Was Hard?",
+      "description": "The Mob Grinder uses RF to kill mobs in front of it. It does not collect the items or XP, but it is capable of near instantly killing a Wither. It is also Wither-proof.",
+      "x": 278,
+      "y": 166,
+      "icon": {
+        "id": "DraconicEvolution:grinder",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Need This and This and This..."
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Mob Grinder",
+          "longDescription": "You can also put furnace fuel into it instead of RF.",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:grinder",
+                "damage": 3
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chesty Crafting Furnace",
+      "description": "This chest has 234 slots, can automatically smelt anything inside of it 5 items at a time, and you has a crafting table inside of it.",
+      "x": 112,
+      "y": 18,
+      "icon": {
+        "id": "DraconicEvolution:draconiumChest"
+      },
+      "prerequisites": [
+        "This Is Going To Be Easy!"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Draconic Chest",
+          "longDescription": "You can also break the Draconic Chest and it will keep it\u0027s contents.",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:draconiumChest"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "What\u0027s the Opposite of a Vacuum",
+      "description": "The Energy Infuser quickly fills items with RF.",
+      "x": 102,
+      "y": 38,
+      "icon": {
+        "id": "DraconicEvolution:energyInfuser"
+      },
+      "prerequisites": [
+        "This Is Going To Be Easy!"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make an Energy Infuser",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:energyInfuser"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wakey Wakey",
+      "description": "Awakened Draconium is the next and final tier of crafting materials.",
+      "x": 159,
+      "y": 73,
+      "icon": {
+        "id": "DraconicEvolution:draconicBlock"
+      },
+      "prerequisites": [
+        "This Is Going To Be Easy!"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get an Awakened Draconium block",
+          "longDescription": "See your Information Tablet for information on how to get Awakened Draconium",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:draconicBlock"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Endest of End Games",
+      "description": "You deserve it. This is one of the most complicated recipes in the modpack. This isn\u0027t it, however.",
+      "x": 159,
+      "y": 124,
+      "icon": {
+        "id": "DraconicEvolution:awakenedCore"
+      },
+      "prerequisites": [
+        "{Sufficiently Advanced Tech}[...orcloth Strapped Silv...]",
+        "{Nucular Energy}[Grand Dad?!]",
+        "{Nucular Energy}[I, Ridium]",
+        "Wakey Wakey"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get an Awakened Core",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:awakenedCore"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "My Little Friend",
+      "description": "The Draconic Bow is the most powerful bow in the modpack. With this bow, you can machinegun fire arrows. You can configure how powerful the bow is in the GUI.",
+      "x": 231,
+      "y": 46,
+      "icon": {
+        "id": "DraconicEvolution:draconicBow",
+        "nbt": "{Energy:10000000}"
+      },
+      "prerequisites": [
+        "The Endest of End Games",
+        "Ratatatatatata"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Draconic Bow",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:draconicBow",
+                "nbt": "{Energy:0,ConfigProfiles:[0:{},1:{},2:{},3:{},4:{}]}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Where\u0027d That Mountain Go?",
+      "description": "The Draconic Pickaxe is the best pickaxe in the modpack. It works similar to the Pickaxe of the Wyvern, but has extra modifiers and has larger maximums.",
+      "x": 231,
+      "y": 75,
+      "icon": {
+        "id": "minecraft:golden_pickaxe"
+      },
+      "prerequisites": [
+        "The Endest of End Games",
+        "Diggy Diggy Hole"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Draconic Pickaxe",
+          "longDescription": "I used a Golden Pickaxe because the model wasn\u0027t showing in HQM",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:draconicPickaxe",
+                "nbt": "{Energy:10000000,ConfigProfiles:[0:{ToolDigDepth:1},1:{},2:{},3:{},4:{}]}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Diggier Digger Hole",
+      "description": "The Draconic Shovel is the best shovel in the modpack. It works similar to the Shovel of the Wyvern, but has extra modifiers and has larger maximums.",
+      "x": 231,
+      "y": 103,
+      "icon": {
+        "id": "minecraft:golden_shovel"
+      },
+      "prerequisites": [
+        "The Endest of End Games",
+        "I Swear There Was Dirt Here"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Draconic Shovel",
+          "longDescription": "I used a Golden Shovel because the model wasn\u0027t showing in HQM",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:draconicShovel",
+                "nbt": "{Energy:10000000}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "? Excalibur! ?",
+      "description": "The Draconic Sword is the second best pickaxe in the modpack. It works similar to the Sowrd of the Wyvern, but has extra modifiers and has larger maximums.",
+      "x": 231,
+      "y": 132,
+      "icon": {
+        "id": "DraconicEvolution:draconicSword",
+        "nbt": "{Energy:10000000}"
+      },
+      "prerequisites": [
+        "The Endest of End Games",
+        "The Sword in the Lake"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Draconic Sword",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:draconicSword",
+                "nbt": "{Energy:10000000}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "By Our Powers Combined!",
+      "description": "The Draconic Staff of Power is the ultimate. It is a mixture of all of the other Draconic tools. It does the most damage, a whopping 60 damage (30 hearts), plus an additional 30% of the mob\u0027s health. It can be configured like the other tools.",
+      "x": 232,
+      "y": 162,
+      "icon": {
+        "id": "DraconicEvolution:draconicDistructionStaff",
+        "nbt": "{Energy:30000000}"
+      },
+      "prerequisites": [
+        "The Endest of End Games",
+        "? Excalibur! ?",
+        "Diggier Digger Hole",
+        "Where\u0027d That Mountain Go?"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Draconic Staff of Power ",
+          "items": [
+            {
+              "item": {
+                "id": "DraconicEvolution:draconicDistructionStaff",
+                "nbt": "{Energy:30000000}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Goodbye Ground!",
+      "description": "Angel Rings. Creative flight. This is the end game. You\u0027re almost done.",
+      "x": 32,
+      "y": 179,
+      "icon": {
+        "id": "ExtraUtilities:angelRing"
+      },
+      "prerequisites": [
+        "{Sufficiently Advanced Tech}[Blood for the Blood God]",
+        "{Actually Better Than Iron}[Alloys]",
+        "{Nucular Energy}[I, Ridium]",
+        "{Actually Better Than Iron}[Quadratic Elephant Destroyer]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Crafted using the Dire Crafting Table. Any Angel Ring will work.",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:angelRing"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Give No Flux Capacitor",
+      "description": "The Creative Flux Capacitor gives infinite RF. You deserve it, man.",
+      "x": 113,
+      "y": 57,
+      "icon": {
+        "id": "ThermalExpansion:capacitor",
+        "nbt": "{Energy:100000}"
+      },
+      "prerequisites": [
+        "{Nucular Energy}[Aresium]",
+        "{Actually Better Than Iron}[Alloys]",
+        "This Is Going To Be Easy!"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Craft Creative Flux Capacitor",
+          "longDescription": "Crafted in the Dire Crafting Table",
+          "items": [
+            {
+              "item": {
+                "id": "ThermalExpansion:capacitor",
+                "nbt": "{Energy:100000}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Who Needs Reactors",
+      "description": "The Creative Energy Cell produces infinite RF at 100,000RF/t per side.",
+      "x": 159,
+      "y": 159,
+      "icon": {
+        "id": "ThermalExpansion:Cell",
+        "nbt": "{Recv:100000,RSControl:1b,Facing:3b,Energy:-1,SideCache:[6 bytes],Send:100000}"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Alloys]",
+        "{Nucular Energy}[Aresium]",
+        "The Endest of End Games"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Creative Energy Cell",
+          "longDescription": "Crafted in the Dire Crafting Table.",
+          "items": [
+            {
+              "item": {
+                "id": "ThermalExpansion:Cell",
+                "nbt": "{Recv:100000,RSControl:1b,Facing:3b,Energy:-1,SideCache:[6 bytes],Send:100000}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ocean in a Block",
+      "description": "The Creative Portable Tank allows you to have an infinite amount of any single fluid. One of the 3 craftable Creative items in the modpack.",
+      "x": 159,
+      "y": 187,
+      "icon": {
+        "id": "ThermalExpansion:Tank"
+      },
+      "prerequisites": [
+        "{Nucular Energy}[Grand Dad?!]",
+        "Who Needs Reactors"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Craftable Portable Tank",
+          "items": [
+            {
+              "item": {
+                "id": "ThermalExpansion:Tank"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}
