@@ -1,13 +1,13 @@
 # Infinity-Evolved-Expert-Mode-HQM
 HQM configs that give Expert Mode a guide via HQM
 
-Go to the Releases folder, then choose the latest version, click the "Expert Mode HQM vX.zip," and download it.
+Download or clone the repo.
 
 Installation instructions:
 
 1: Either duplicate your current profile (so you don't have HQM in an existing world), or install the Infinity Evolved pack from curse.
 
-2:Click on view profile for the modpack, click on the ... in upper right hand corner, and select "Profile Options"
+2: Click on view profile for the modpack, click on the ... in upper right hand corner, and select "Profile Options"
 
 3: Change the name to something so you can easily tell it apart from a normal IE install, and uncheck the box next to "Locked". Accept the popup box that displays. Exit the profile options screen.
 
