@@ -1,0 +1,513 @@
+{
+  "name": "Nucular Energy",
+  "description": "This set is focused on setting up an IC2 Nuclear Reactor",
+  "quests": [
+    {
+      "name": "Whose Ranium?",
+      "description": "Turning Uranium Ore into Uranium Fuel Rods is a rather complicated process requiring a bunch of machines.",
+      "x": 158,
+      "y": 17,
+      "icon": {
+        "id": "IC2:reactorUraniumSimple",
+        "damage": 1
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Dwayne \"The Rock\" Crusher]",
+        "{It\u0027s Like a Whole New Game}[Wazer Wifle]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Macerator",
+          "longDescription": "Crushed Uranium ore can be made in either a Macerator or Rock Crusher.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemCrushedOre",
+                "damage": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make an Ore Washing Plant",
+          "longDescription": "The Ore Washing Plant turns water and Crushed Uranium Ore into a Purified Crushed Uranium Ore, 2 Tiny Piles of Lead Dust, and a Stone Dust.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockMachine2",
+                "damage": 5
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "IC2:itemPurifiedCrushedOre",
+                "damage": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make a Hazmat Suit",
+          "longDescription": "A full Hazmat suit protects the player from getting radiated by holding Uranium, which acts similar to the Wither effect, killing quickly.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemArmorHazmatHelmet"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "IC2:itemArmorHazmatChestplate"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "IC2:itemArmorHazmatLeggings"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "IC2:itemArmorRubBoots"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make a Thermal Centrifuge",
+          "longDescription": "The Thermal Centrifuge turns Purified Crushed Uranium Ore into Uranium 238. It has a heat mechanic similar to the Induction Furnace. Give it a redstone signal and it will constantly use EU to heat up, or just put items into it and it will heat up while in use.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockMachine2",
+                "damage": 3
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "IC2:itemUran238"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make a Solid Canning Machine",
+          "longDescription": "The Solid Canning Machine has many uses, among which is to turn Enriched Uranium Nuclear Fuel into Fuel Rods (Uranium). Put the Enriched Uranium Nuclear Fuel into the far left slot, and the Fuel Rods (Empty) in the slot directly to the right of that one.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockMachine2",
+                "damage": 9
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "IC2:reactorUraniumSimple",
+                "damage": 1
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ME-ME Matter",
+      "description": "UU-Matter is very useful. It allows you to turn EU into almost any item.",
+      "x": 118,
+      "y": 17,
+      "icon": {
+        "id": "IC2:itemCellEmpty",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Whose Ranium?"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Mass Fabricator",
+          "longDescription": "The Mass Fabricator uses 1,000,000 EU to make 1mB of UUM. When supplied with Scrap from a Recycler, it is much faster and efficient, needing only 166,666 EU and 34 Scrap per mB of UUM.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockMachine",
+                "damage": 14
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make a Scanner+Pattern Storage",
+          "longDescription": "The Scanner breaks down an item or block and puts it\u0027s pattern into a Pattern Storage block touching it.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockMachine2",
+                "damage": 7
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "IC2:blockMachine2",
+                "damage": 6
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make a Replicator",
+          "longDescription": "The Replicator should touch the Pattern Storage. Click the arrows at the top of the GUI to choose which pattern to create using UU-Matter. Different items require different amounts of UU-Matter",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockMachine2",
+                "damage": 8
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lemme At \u0027Em!",
+      "description": "Scrap significantly speeds up the Mass Fabricator.",
+      "x": 76,
+      "y": 16,
+      "icon": {
+        "id": "IC2:itemScrap"
+      },
+      "prerequisites": [
+        "ME-ME Matter"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Recycler",
+          "longDescription": "Put anything into the Recycler, give it EU, and it has a 1 in 8 (12.5%) chance of turning into Scrap.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockMachine",
+                "damage": 11
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Explosive Fun!",
+      "description": "An IC2 Nuclear Reactor is one of the best ways to get EU large-scale. This is a very complicated machine and very hard to explain through text, so visit the wiki page for this at tinyurl.com/IC2Reactor. You can look online for the best reactor designs. Beware: Nuclear Reactors can explode if they get too hot!",
+      "x": 158,
+      "y": 60,
+      "icon": {
+        "id": "IC2:blockGenerator",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Whose Ranium?"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Set up the Nuclear Reactor",
+          "longDescription": "The Nuclear Reactor will not run unless it has a redstone signal. You can place up to 6 Reactor Chamber blocks touching the sides of the Nuclear Reactor to maximize the size of the Nuclear Reactor.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockReactorChamber"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Protecting Your Base",
+      "description": "The Nuclear Reactor is very... explodey. One of the best blocks to protect your base from meeting it\u0027s untimely demise is Reinforced Stone. A double layer of Reinforced Stone is best for completely neutralizing a Nuclear Reactor\u0027s explosion.",
+      "x": 201,
+      "y": 59,
+      "icon": {
+        "id": "IC2:blockAlloy"
+      },
+      "prerequisites": [
+        "Explosive Fun!"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make CF Powder",
+          "longDescription": "CF Powder plus a bucket of water in a Fluid Canning Machine in Fluid Enriching mode makes a bucket of Construction Foam. A single CF Powder is good for 10 blocks of Reinforced Stone.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemPartCFPowder"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make the CF Sprayer",
+          "longDescription": "To fill the CF Sprayer, place it into the top left slot of the Canning Machine while Construction Foam is in it.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemFoamSprayer"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Spray the Iron Scaffolds",
+          "longDescription": "Place down the Iron Scaffolds in the configuration you want your Reinforced Stone to be in. Right click the blocks with the CF Sprayer, and wait for it to dry. You can also right click it with sand to instantly harden it.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockAlloy"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Aresium",
+      "description": "Fuel Rods (Uranium Depleted) are the product of entirely using a Fuel Rod (Uranium). If you put it into a Thermal Centrifuge, you get a Tiny Pile of Plutonium, 4 Uranium 238, and Iron Dust. The Plutonium is what you want, it is very useful.",
+      "x": 158,
+      "y": 106,
+      "icon": {
+        "id": "IC2:itemPlutonium"
+      },
+      "prerequisites": [
+        "Explosive Fun!"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get the Depleted Uranium",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:reactorUraniumSimpledepleted"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Get the Tiny Pile of Plutonium",
+          "longDescription": "I personally recommend using the Replicator to get 9 Tiny Piles of Plutonium for now. Much quicker than waiting for 9 Fuel Rods (Uranium) to deplete. You get 1 Tiny Pile per Fuel Rod (Uranium Depleted), which takes 2.75 real life hours.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemPlutoniumSmall"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make the Plutonium",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemPlutonium"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Infinitely Slow Power",
+      "description": "The Radioisotope Thermoelectric Generator is fueled by Pellets of RTG Fuel and makes EU. Pellets of RTG Fuel are fairly expensive to make, but they are not depleted or used up while making EU in this. However, at max speed with 6 Pellets of RTG Fuel inside of it, it generates only 32EU/t.",
+      "x": 195,
+      "y": 89,
+      "icon": {
+        "id": "IC2:blockGenerator",
+        "damage": 6
+      },
+      "prerequisites": [
+        "Aresium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the RTG",
+          "longDescription": "What a mouthful",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockGenerator",
+                "damage": 6
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Absolutely Mad",
+      "description": "MOX Nuclear Fuel is a hybrid of Plutonium and Uraniun 238. The Fuel Rod (MOX) only lasts half as long as the Fuel Rod (Uranium), but gives much more EU. MOX becomes more efficient as the heat rises.",
+      "x": 123,
+      "y": 89,
+      "icon": {
+        "id": "IC2:reactorMOXSimple",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Aresium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make MOX Nuclear Fuel",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemMOX"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "I, Ridium",
+      "description": "Iridium is probably the hardest item to get at this part of the game. It needs 80M RF, plus 1 Pellet of RTG Fuel and a MOX Nuclear Fuel. Once you have one, I recommend using the Replicator to get more instead of making it out of the MOX and RTG.",
+      "x": 157,
+      "y": 145,
+      "icon": {
+        "id": "IC2:itemOreIridium"
+      },
+      "prerequisites": [
+        "Aresium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get Iridium",
+          "longDescription": "Making Iridium with the Replicator takes about 20,000,000 EU per. Making it regularly requires 59 Tiny Piles of Plutonium, which takes roughly three forevers.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemOreIridium"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plug and Play",
+      "description": "Now that you have Pellets of RTG Fuel available, you can make Big Reactors. Big Reactors are much easier to set up and run, with no chance of exploding.",
+      "x": 123,
+      "y": 126,
+      "icon": {
+        "id": "BigReactors:YelloriumFuelRod"
+      },
+      "prerequisites": [
+        "Aresium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a 3x3x3 Big Reactor",
+          "longDescription": "The smallest Big Reactor possible makes ~258RF/t, and uses .215mB/t. It gets hot quickly, which makes it less fuel efficient, so you\u0027re going to want to eventually make a larger, cooler reactor.",
+          "items": [
+            {
+              "item": {
+                "id": "BigReactors:BRReactorPart"
+              },
+              "required": 22
+            },
+            {
+              "item": {
+                "id": "BigReactors:YelloriumFuelRod"
+              }
+            },
+            {
+              "item": {
+                "id": "BigReactors:BRReactorPart",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "BigReactors:BRReactorPart",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "BigReactors:BRReactorPart",
+                "damage": 4
+              }
+            },
+            {
+              "item": {
+                "id": "BigReactors:BRReactorPart",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grand Dad?!",
+      "description": "Bedrockium is the toughest material known to mankind. While not used in very many recipes, the things it does make are very, very cool.",
+      "x": 195,
+      "y": 127,
+      "icon": {
+        "id": "ExtraUtilities:bedrockiumIngot"
+      },
+      "prerequisites": [
+        "Aresium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Bedrockium",
+          "longDescription": "Bedrockium is made by smelting MOX Nuclear Fuel. How that is safe, I have no idea.",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:bedrockiumIngot"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}
