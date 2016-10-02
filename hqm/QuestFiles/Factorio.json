@@ -194,7 +194,14 @@
           "type": "DETECT",
           "description": "Make the Tunnel Bore",
           "longDescription": "Any fuel that would work in a furnace will work in the Fuel slots. Coal Coke is the best for this reason.",
-          "items": []
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:cart.bore"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
         },
         {
           "type": "DETECT",
