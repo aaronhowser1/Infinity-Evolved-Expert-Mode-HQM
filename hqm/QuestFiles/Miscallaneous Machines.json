@@ -1,0 +1,1639 @@
+{
+  "name": "Miscallaneous Machines",
+  "description": "These quests didn\u0027t really fit in anywhere else, so we stuck \u0027em here.",
+  "quests": [
+    {
+      "name": "Screw Hammers, Seriously",
+      "description": "How many Forge Hammers have you made so far? Check your Statistics! $20 on it being more than 5. The Metal Former uses EU to turn Ingots into Plates, Cables, and many other things that usually would take and break a Forge Hammer and a Cutter.",
+      "x": 29,
+      "y": 43,
+      "icon": {
+        "id": "IC2:blockMachine2",
+        "damage": 4
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[So Heats]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get a Metal Former",
+          "longDescription": "The Metal Former uses EU, not RF, so you can\u0027t just connect this to your Fluxducts or Energy Conduits or however you\u0027ve decided to move RF around. You need to use Cables, preferably Insulated ones. You can convert RF into EU and back using Immersive Engineering Connectors and Wires.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockMachine2",
+                "damage": 4
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bigger on the Inside",
+      "description": "The Iron Chests mod adds new chests made of different metals with more inventory space.",
+      "x": 29,
+      "y": 102,
+      "icon": {
+        "id": "IronChest:BlockIronChest"
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[Tools of the Trade]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make an Iron Chest",
+          "items": [
+            {
+              "item": {
+                "id": "IronChest:BlockIronChest"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Microwaves and Macrowaves",
+      "description": "The Electric Furnace uses EU to smelt items, similar to the Furnace. It\u0027s probably the first energy-powered furnace that will be available to you.",
+      "x": 28,
+      "y": 14,
+      "icon": {
+        "id": "IC2:blockMachine",
+        "damage": 2
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[So Heats]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make an Electric Furnace",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockMachine",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make an Induction Furnace",
+          "longDescription": "The Induction Furnace is an upgraded version of the Electric Furnace. It has an interesting mechanic where the longer it\u0027s running, the faster it smelts. At max speed, it\u0027s much faster than the Electric Furnace. To keep it running, and therefor hot, while no items are inside of it, you can give it a redstone signal. However, it uses EU so long as it runs, even if empty. If you want to keep it running without having a lever on it, you can put a Redstone Signal Inverter Upgrade in it, which will make it think it has a signal when it doesnt, and vice-versa.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockMachine",
+                "damage": 13
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mass Storage",
+      "description": "The Drawer Controller allows you to access every single connected Storage Drawer from sources like the Inventory Panel, ME Storage Bus, or just right clicking the controller with a hand to fill connected drawers.",
+      "x": 29,
+      "y": 72,
+      "icon": {
+        "id": "StorageDrawers:controller"
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[So Heats]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get a Drawer Controller",
+          "longDescription": "The Drawer Controller doesn\u0027t have to be directly touching every Drawer, it just has to be touching one that is touching another that is touching another etc. So if you have a wall of Drawers, so long as the Controller is touching one of them, you can access them all from it.",
+          "items": [
+            {
+              "item": {
+                "id": "StorageDrawers:controller"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "More Rubber!",
+      "description": "The Extractor uses EU to extract extra rubber from Sticky Resin and Rubber Wood.",
+      "x": 56,
+      "y": 102,
+      "icon": {
+        "id": "IC2:blockMachine",
+        "damage": 4
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[Tools of the Trade]",
+        "{It\u0027s Like a Whole New Game}[So Heats]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make an Extractor",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockMachine",
+                "damage": 4
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Amp it Up!",
+      "description": "The Turning Table is a special machine that creates items needed in crafting recipes.",
+      "x": 29,
+      "y": 131,
+      "icon": {
+        "id": "IC2:blockMachine3",
+        "damage": 8
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[Tools of the Trade]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Manual Kinetic Generator",
+          "longDescription": "The Turning Table does not use EU, but kinetic energy (kU). The Manual Kinetic Generator generates kU as the player holds right-click on it. If you find yourself using this often, you may want to upgrade to an Electric Kinetic Generator.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockKineticGenerator",
+                "damage": 3
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make a Turning Table",
+          "longDescription": "The Turning Table takes in kU from any side. Place an Iron Turning Blank into the very top left slot, and a Lathing Tool into the slot just below that. Using NEI, you can find recipes that need Iron Turning Blanks of specific types. Check their recipes to see the correct configuration for that recipe. There are 5 buttons with a Lathing Tool in the GUI. By default, all are at 5/5. To remove 1/5 from it a layer, click the Lathing Tool above it. For instance, the Handle type Iron Turning Blank requires 4/5, 3/5, 2/5, 2/5, 2/5. To do this, click the first one twice, second one thrice, and third, fourth, and fifth four times.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:blockMachine3",
+                "damage": 8
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "IC2:itemLathingTool"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "IC2:itemTurningBlanks",
+                "damage": 349525,
+                "nbt": "{state:{l0:5,l1:5,l2:5,l3:5,l4:5}}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wazer Wifle",
+      "description": "The Mining Laser is a mining tool, that shoots lasers. Pretty straight forward. The Mining Laser has many modes: Mining, with normal beam and average power usage; Low-focus, with a very short beam range and low energy usage; Long-range, with a stronger beam that can penetrate more blocks and a higher energy usage; Scatter, shoots 25 beams in front of you, shotgun style, with an average power usage multiplied per beam; Explosive, beam explodes upon hitting a block, higher power usage; Horizontal, same as mining mode except the beam can only move horizontally; and Super-heat, where blocks drop what they regularly smelt into if possible (ie, if you shoot Iron Ore, it will drop an Iron Ingot). To change the mode, go into your conrols and find IC2 Mode Switch Key, and hold that and right click with the Mining Laser in your hand.",
+      "x": 57,
+      "y": 131,
+      "icon": {
+        "id": "IC2:itemToolMiningLaser",
+        "damage": 26
+      },
+      "prerequisites": [
+        "Amp it Up!"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get a Mining Laser",
+          "longDescription": "The Mining Laser needs a Handle type Iron Turning Blank.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemToolMiningLaser",
+                "damage": 26
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Solid to Fluid to Solid",
+      "description": "The Magma Crucible and Fluid Transposer work together to make new materials. The Magma Crucible melts items into fluids and then the Magma Crucible applies those fluids to other items.",
+      "x": 56,
+      "y": 73,
+      "icon": {
+        "id": "ThermalExpansion:Machine",
+        "damage": 5,
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[0:\"6 bytes\"],Level:3b,Augments:[0:{Slot:0,id:5288s,Count:1b,Damage:0s},1:{Slot:1,id:5288s,Count:1b,Damage:32s},2:{Slot:2,id:5288s,Count:1b,Damage:16s}]}"
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[So Heats]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Magma Crucible",
+          "longDescription": "Place the item you wish to melt into the Magma Crucible and feed it RF to melt it. Any tier of Magma Crucible will work with the quest.",
+          "items": [
+            {
+              "item": {
+                "id": "ThermalExpansion:Machine",
+                "damage": 4,
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[0:\"6 bytes\"],Level:3b,Augments:[0:{Slot:0,id:5288s,Count:1b,Damage:0s},1:{Slot:1,id:5288s,Count:1b,Damage:32s},2:{Slot:2,id:5288s,Count:1b,Damage:16s}]}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make the Fluid Transposer",
+          "longDescription": "The Fluid Transposer takes mixes fluids and items to make new things. Fluids can be pipes in through the blue side of the machine, so you can put it next to the Magma Crucible and set it up that way. Items go into the blue sides as well, and then it uses RF to combine them.",
+          "items": [
+            {
+              "item": {
+                "id": "ThermalExpansion:Machine",
+                "damage": 5,
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[0:\"6 bytes\"],Level:3b,Augments:[0:{Slot:0,id:5288s,Count:1b,Damage:0s},1:{Slot:1,id:5288s,Count:1b,Damage:32s},2:{Slot:2,id:5288s,Count:1b,Damage:16s}]}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Advanced Combining",
+      "description": "The Induction Smelter works similarly to alloying, you put two things together to make a new one. The Induction Smelter is the only way to get Slag, along with several other things.",
+      "x": 57,
+      "y": 43,
+      "icon": {
+        "id": "ThermalExpansion:Machine",
+        "damage": 3,
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[0:\"6 bytes\"],Level:3b,Augments:[0:{Slot:0,id:5288s,Count:1b,Damage:0s},1:{Slot:1,id:5288s,Count:1b,Damage:32s},2:{Slot:2,id:5288s,Count:1b,Damage:16s}]}"
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[So Heats]",
+        "{It\u0027s Like a Whole New Game}[Tools of the Trade]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make an Induction Smelter",
+          "longDescription": "Put the items that you wish to combine in the correct slots and feed the Induction Smelter RF to work it. Any tier will work with the quest.",
+          "items": [
+            {
+              "item": {
+                "id": "ThermalExpansion:Machine",
+                "damage": 3,
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[0:\"6 bytes\"],Level:3b,Augments:[0:{Slot:0,id:5288s,Count:1b,Damage:0s},1:{Slot:1,id:5288s,Count:1b,Damage:32s},2:{Slot:2,id:5288s,Count:1b,Damage:16s}]}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Diggier Diggier Hole",
+      "description": "The Diamond Drill works almost identically to the regular Mining Drill, except is faster and can mine Obsidian-level blocks.",
+      "x": 29,
+      "y": 163,
+      "icon": {
+        "id": "IC2:itemToolDDrill",
+        "damage": 26
+      },
+      "prerequisites": [
+        "Amp it Up!",
+        "Diggy Diggy Hole"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Diamond Drill",
+          "longDescription": "Again, the Diamond Drill must be charged to use. The Diamond Drill uses more EU per block than the Mining Drill does.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemToolDDrill",
+                "damage": 26
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Diggy Diggy Hole",
+      "description": "The Mining Drill is a relatively early-game, well, mining drill. You mine with it. The Mining Drill does not use durability, it uses EU. Charge it in a BatBox or something else that charges.",
+      "x": 29,
+      "y": 192,
+      "icon": {
+        "id": "IC2:itemToolDrill",
+        "damage": 1,
+        "nbt": "{charge:30000.0d}"
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[Tools of the Trade]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Mining Drill",
+          "longDescription": "The Mining Drill can only mine whatever an Iron Pickaxe would be able to. You can right-click to place a torch if there is one anywhere in your inventory.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemToolDrill",
+                "damage": 26
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Not Quite ME",
+      "description": "The Inventory Panel is fueled not by RF, but by Nutrient Distillation. It shows all inventories it is connected to as if it was one. You can pull out from them, and it has a 3x3 crafting GUI inside it. To put items back into your inventories from the Panel, put them in the Return Area. Click the \"Return Area\" text to set it to a Storage Area, which won\u0027t be pulled out. Click it again to set it back to Return.",
+      "x": 114,
+      "y": 131,
+      "icon": {
+        "id": "EnderIO:itemFunctionUpgrade"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Cut\u0027N\u0027Chop]",
+        "{Actually Better Than Iron}[Bound to Your Will]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make The Vat",
+          "longDescription": "The Vat is where Nutrient Distillation is created. Pump in water, make sure it has RF, and then check the recipes for the best way you can make Nutrient Distillation depending on what you have at the time.",
+          "items": [
+            {
+              "item": {
+                "id": "EnderIO:blockVat"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make the Inventory Panel",
+          "longDescription": "The way the Inventory Panel works is that it must be placed on an Inventory Conduit from Ender IO. Set the Conduit that it is on to be pulling out constantly. Then, connect the Panel via Item Conduit to other Chests, Barrels, or Drawer. If you hook it up to the Drawer Controller, it\u0027s the same as if you attatched it to every single Drawer touching it, or touching Drawers touching it, etc.",
+          "items": [
+            {
+              "item": {
+                "id": "EnderIO:blockInventoryPanel"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Remote Awareness Upgrades",
+          "longDescription": "Set the Item Conduits touching the inventories you want hooked up to to be Insert only. You can set up filters however you want. There is another upgrade slot in the Conduit GUI that allows you to place in the Remote Awareness Upgrade, which will allow the Inventory Panel to see that inventory and pull from it.",
+          "items": [
+            {
+              "item": {
+                "id": "EnderIO:itemFunctionUpgrade"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ctrl X Ctrl V",
+      "description": "The Ender Quarry is an extremely useful block. When a border is defined, either by a square of fences or 3 Ender-Markers, it will request that you give it RF and an inventory to push items. Once all the requirements are met, it will start replacing every block from a few blocks above the square defined all the way down to y\u003d0, not including Bedrock.",
+      "x": 57,
+      "y": 162,
+      "icon": {
+        "id": "ExtraUtilities:enderQuarry"
+      },
+      "prerequisites": [
+        "Wazer Wifle",
+        "{Actually Better Than Iron}[Meteor Hunter]",
+        "{Actually Better Than Iron}[Eating Skeletons]",
+        "Quadratic Elephant Destroyer",
+        "Diggy Diggy Hole"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Ender Quarry",
+          "longDescription": "Blocks mined are not destroyed, but replaced with Dirt. This is great for preventing lag, as no lighting or fluid updates are made whatsoever. If there is no inventory to push into, or if that inventory is full, the quarry will temporarily stop until there is room to push items into. For this reason, it is best to automate pulling items out of the quarry. Ender Chests are great for this, as you can have one Ender Chest at your Quarry, and the other at your ore processing.",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:enderQuarry"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make 3 Ender-Markers",
+          "longDescription": "Ender-Markers are the alternative to a square of fences to define the area an Ender Quarry will mine. Place the first one next to the Ender Quarry, and run in any cardinal direction. Make sure you run in a straight line. Once you\u0027ve forgotten how far away the quarry is, place down the Ender-Marker. If it is on either the same x or z coordinate, particles will come out of the Ender-Marker towards the main one. Go back to the quarry and do the same thing, but in a perpindicular direction. Distance between Ender-Markers does nothing except give you more materials. As far as I know, there is no limit to how far away it can be. Although, do make sure nobody\u0027s base is in the middle, that would be rude. Once the 3 are placed correctly, right click on the Ender Quarry and it will try to define an area. If it works, congrats. If it doesn\u0027t, one of the Ender-Markers isn\u0027t in the right place.",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:endMarker"
+              },
+              "required": 3,
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Ender Quarry Update Base",
+          "longDescription": "Blocks mined are not destroyed, but replaced with Dirt. This is great for preventing lag, as no lighting or fluid updates are made whatsoever. If there is no inventory to push into, or if that inventory is full, the quarry will temporarily stop until there is room to push items into. For this reason, it is best to automate pulling items out of the quarry. Ender Chests are great for this, as you can have one Ender Chest at your Quarry, and the other at your ore processing.",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:enderQuarryUpgrade"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Quadratic Elephant Destroyer",
+      "description": "The QED is a special crafting bench that acts similar to the BC Laser/Assembly Table duo. For the QED to run, you need to have at least 1 Ender-Flux Crystal nearby. It requires no RF to run, they simply must exist in the world nearby. The more Ender-Flux Crystals you place nearby, the faster it runs.",
+      "x": 57,
+      "y": 191,
+      "icon": {
+        "id": "ExtraUtilities:endConstructor"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Alloys]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Set up QED",
+          "longDescription": "NEI is weird with the Basic Gates required. It says that you need to use an Integration Table, but you don\u0027t; just put a Red Pipe Wire and a Redstone Chipset together in the Assembly Table.",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:endConstructor"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "ExtraUtilities:endConstructor",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Who Took My Mountain?",
+      "description": "The BC Quarry uses RF to mine an area down to Bedrock. By default, it has an area of 9x9x4, which can be changed using Land Marks. Once it has RF, it starts to clear the area required and build the frame. Once that happens, it starts mining and putting the blocks into the inventory or pipe above it. If none is available, it is spit out at extreme velocity and gets all over the floor, and generally takes a while to mop up.",
+      "x": 86,
+      "y": 131,
+      "icon": {
+        "id": "BuildCraft|Builders:machineBlock"
+      },
+      "prerequisites": [
+        "Wazer Wifle",
+        "{Actually Better Than Iron}[Meteor Hunter]",
+        "{Actually Better Than Iron}[Eating Skeletons]",
+        "Diggy Diggy Hole"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Quarry",
+          "longDescription": "The Quarry is not upgradable. A Redstone signal will turn it off. The more RF you give it, the faster it goes. The Quarry gets a bit confused with Lava, so try to Pump that out sharpish.",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Builders:machineBlock"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Excavatorium",
+      "description": "The Excavator \"mines\" ores that are in Mineral Deposits. Mineral Deposits cannot be found in any way except for using a Core Sample Drill. Place the Core Sample Drill anywhere in the world, and power it. Mineral Deposits are per chunk, and as such you might have to explore quite a bit before you find a chunk with a Mineral Deposit.",
+      "x": 114,
+      "y": 162,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice",
+        "damage": 14
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Meteor Hunter]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Core Sample Drill",
+          "longDescription": "Hit F9 to see chunk borders. If the chunk you are in doesn\u0027t have an Ore Deposit, go one chunk over and repeat. An entire Ore Deposit has roughly a Diamond Chest or more\u0027s worth of ores.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDevice",
+                "damage": 14
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Set up Excavator",
+          "longDescription": "See the Heavy Machinery tab of your Engineer\u0027s Manual to find out how to make the multblock.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:storage",
+                "damage": 7
+              },
+              "required": 21,
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDecoration",
+                "damage": 7
+              },
+              "required": 9
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDecoration",
+                "damage": 5
+              },
+              "required": 13
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDecoration",
+                "damage": 1
+              },
+              "required": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arm\u0027s Length, Please",
+      "description": "The MFR Grinder instantly kills regular mobs like Creepers, Skeletons, Zombies, and Wither Skeletons. It uses RF to run, and each mob kill produces some Mob Essence.",
+      "x": 292,
+      "y": 15,
+      "icon": {
+        "id": "MineFactoryReloaded:machine.0",
+        "damage": 13
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[The \"The Vat\"]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Grinder",
+          "longDescription": "If you put a pipe or inventory on the back of the Grinder, then items are put in there. The Grinder has a range of 5x5x3, which cannot be upgraded.",
+          "items": [
+            {
+              "item": {
+                "id": "MineFactoryReloaded:machine.0",
+                "damage": 13
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Butcher Pete",
+      "description": "The Killer Joe is a special machine that uses any sword that you place inside of it to kill mobs in a 5x5x4 area in front of it. While you can\u0027t put Tinkers\u0027 Construct weapons in it, most other swords work. Enchantments applied to the sword also take effect, but the sword takes durability damage as if it was used like normal. Mobs are not instantly killed, but have to be attacked the same amount of times as usual using the sword inside of it. Beware, mobs will attack the Killer Joe if they survive the first attack, which means that Creepers will explode and Blazes will light things on fire. Use with caution.",
+      "x": 114,
+      "y": 104,
+      "icon": {
+        "id": "EnderIO:blockKillerJoe"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Bound to Your Will]",
+        "{Actually Better Than Iron}[Cut\u0027N\u0027Chop]",
+        "{Actually Better Than Iron}[The \"The Vat\"]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Killer Joe",
+          "longDescription": "The Killer Joe does not use RF or EU, but instead requires Nutrient Distillation be pumped into it. 1400mB is required to function, but it can store up to 2000mB. Experience gets sucked into it, which can be pumped out or put into your own XP, while items are left on the ground to be collected with a Vacuum Hopper or similar methods.",
+          "items": [
+            {
+              "item": {
+                "id": "EnderIO:blockKillerJoe"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Safari Zone",
+      "description": "The Auto-Spawner uses RF and Mob Essence to spawn the mob inside of the Safari Net. ",
+      "x": 292,
+      "y": 47,
+      "icon": {
+        "id": "MineFactoryReloaded:machine.1",
+        "damage": 9
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[The \"The Vat\"]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Safari Net + Launcher",
+          "longDescription": "Shift right click the Safari Net Launcher to set it to Catch Mode. If you have a Safari Net in your inventory and you shoot it at a mob, it will be put into the Safari Net.",
+          "items": [
+            {
+              "item": {
+                "id": "MineFactoryReloaded:safarinet.launcher"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "MineFactoryReloaded:safarinet.reusable"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make the Auto-Spawner",
+          "longDescription": "The Exact Copy mode uses more RF and Mob Essence, but spawns an exact copy of the mob you caught. This means if you caught something with low health, the mobs spawned will have low health. If you caught a Wither Skeleton, Wither Skeletons will be spawned in the Overworld.",
+          "items": [
+            {
+              "item": {
+                "id": "MineFactoryReloaded:machine.1",
+                "damage": 9
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Capacitative Spawning",
+      "description": "The Powered Spawner is, well, an RF-powered spawner. To set the mob, you have to combine it with a Broken Spawner (which is gotten by mining a Spawner) in an Anvil, which takes about 30 levels.",
+      "x": 291,
+      "y": 79,
+      "icon": {
+        "id": "EnderIO:blockPoweredSpawner"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Cut\u0027N\u0027Chop]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get any Broken Spawner",
+          "longDescription": "You can mine a vanilla Spawner to get a Broken Spawner. If you want to get a different mob\u0027s Spawner, you can combine it with a filled Soul Vial in an Anvil to set the Broken Spawner to the mob inside of the Vial.",
+          "items": [
+            {
+              "item": {
+                "id": "EnderIO:itemBrokenSpawner",
+                "nbt": "{mobType:\"Skeleton\"}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make the Powered Spawner",
+          "longDescription": "Combine the Broken Spawner and Powered Spawner in the Anvil to set the Powered Spawner to that mob. It runs on RF only, and can be upgraded with Double-Layer or Octadic Capacitors, which makes it faster and has more RF capacity.",
+          "items": [
+            {
+              "item": {
+                "id": "EnderIO:blockPoweredSpawner"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Drill From the Heavens",
+      "description": "The Laser Drill doesn\u0027t actually mine, per se. Instead, it essentially turns RF into ores. There are some slots that you can put colored Laser Focii to increase the chance of getting certain ores. Hit U on the Focii to see which ores they increase the chance of getting.",
+      "x": 141,
+      "y": 191,
+      "icon": {
+        "id": "MineFactoryReloaded:machine.2"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Eating Skeletons]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Laser Precharger",
+          "longDescription": "The RF does not go directly into the Laser Drill. Instead it goes into the Laser Drill Prechargers, which shoot into the Laser Drill. Place up to 4 around the Laser Drill with 1 block away, so that the side with the hole is facing the Laser Drill. Don\u0027t get into the beam, it stings!",
+          "items": [
+            {
+              "item": {
+                "id": "MineFactoryReloaded:machine.2",
+                "damage": 1
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Set up the Laser Drill",
+          "longDescription": "Place the Laser Drill 1 block below the build limit, so you can place a chest on it to collect the materials. The higher you place it, the less RF it requires. The Laser Drill must have either Void or Bedrock underneath it, nothing else. That means you must dig directly below it until it hits Bedrock, or place it somewhere that has access to the Void. ",
+          "items": [
+            {
+              "item": {
+                "id": "MineFactoryReloaded:machine.2"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "What Does This Button Do",
+      "description": "The Charged Porter allows you to teleport to the bound Matter Receiver using RF in the Charged Porter.",
+      "x": 141,
+      "y": 162,
+      "icon": {
+        "id": "rftools:chargedPorterItem"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Portation]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Porter",
+          "longDescription": "Shift right click a Matter Receiver to bind the Charged Porter to it. You can only set one teleport location using it. Right click to teleport to it if it has RF.",
+          "items": [
+            {
+              "item": {
+                "id": "rftools:chargedPorterItem"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "That New Mine Smell",
+      "description": "The Mining Dimension is supposed to preserve the Overworld by providing a new dimension to put your quarries in. ",
+      "x": 86,
+      "y": 162,
+      "icon": {
+        "id": "Aroma1997sDimension:portalIgniter"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[The Brotherhood of Steel]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Mining MultiTool",
+          "longDescription": "The Mining MultiTool acts as both a crafting component for the portal and the activator. Craft 6 Portal Frame blocks (that\u0027s the absolute minimum, 4 for the sides and 2 for the top and bottom. They can be any size, but this is the least you can do it with) and then build it in the world like you would a Nether Portal. Then, use the Mining MultiTool as you would use a Flint and Steel with the Nether Portal to activate it. To go through the portal, you have to sneak through it.",
+          "items": [
+            {
+              "item": {
+                "id": "Aroma1997sDimension:portalIgniter"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "Aroma1997sDimension:portalFrame"
+              },
+              "required": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Automated Automation",
+      "description": "Steve\u0027s Factory Manager allows for extremely precise and complex automation that pipes can\u0027t do. You can pull and push from specific slots of an inventory, interact with Redstone, change Signs, break and place blocks, and so much more with SFM.",
+      "x": 85,
+      "y": 103,
+      "icon": {
+        "id": "StevesFactoryManager:BlockMachineManagerName"
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[Meteor Hunter]",
+        "Solid to Fluid to Solid"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Machine Inventory Manager",
+          "longDescription": "The Machine Inventory Manager is the key to SFM. The Machine Inventory Manager alone can only interact with inventories it is directly touching, but with Inventory Cables you can extend it\u0027s reach. To explain how it works, let\u0027s automate Inscribers with it. Place the Inscriber and an inventory, like a chest, containing the parts required to make the circuits either touching the Machine Inventory Manager or an Inventory Cable leading to it, and then open the Machine Inventory Manager. All commands start with a Trigger, so make one and place it in the work area. Make an input command and attatch it to the Trigger. Set the inventory to the chest and set a whitelist for, for example, gold ingots. Make an output, connect it to the input, set it to the Inscriber, and set it to target the North, South, East, or West sides. Any of these, assuming that the Inscriber hasn\u0027t been rotated to be on it\u0027s side, will work to push items into or pull items out of the Inscriber. Create another input hooked to the last output and set it to target the N/S/E/W side of the Inscriber and whitelist Printed Logic Circuits, then connect another output on the chest, or barrels or wherever you want to output it. Using SFM, you can fully automate all the circuits by having one Inscriber per printed circuit type and another final one that combines them. For reference, the top side of the Inscriber puts items into the top slot, the bottom into the bottom slot, and the sides interact with the middle and output slots.",
+          "items": [
+            {
+              "item": {
+                "id": "StevesFactoryManager:BlockMachineManagerName"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Metal Gear",
+      "description": "The Metal Press is a multiblock that turns ingots plates, gears, or rods, depending on what mold it\u0027s using. Right click on the multiblock while holding the mold to insert it. Feed RF through the top, and ",
+      "x": 57,
+      "y": 14,
+      "icon": {
+        "id": "ImmersiveEngineering:mold",
+        "damage": 1
+      },
+      "prerequisites": [
+        "{Actually Better Than Iron}[The Brotherhood of Steel]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Set up Metal Press",
+          "longDescription": "See the Engineer\u0027s Manual to see a visual guide to how to build it.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDecoration",
+                "damage": 1
+              },
+              "required": 3,
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "minecraft:piston"
+              }
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDecoration",
+                "damage": 5
+              }
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDevice",
+                "damage": 11
+              },
+              "required": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Coated in Redstone",
+      "description": "Redstone Arsenal adds RF-powered tools and armor based around Thermal Expansion. ",
+      "x": 85,
+      "y": 73,
+      "icon": {
+        "id": "RedstoneArsenal:armor.plateFlux",
+        "nbt": "{Energy:400000}"
+      },
+      "prerequisites": [
+        "Solid to Fluid to Solid",
+        "Advanced Combining"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Flux-Infused Armor",
+          "longDescription": "Flux-Infused Armor uses RF instead of durability. When filled with RF, the armor negates almost 100% of the damage taken. It also has a very high enchantability.",
+          "items": [
+            {
+              "item": {
+                "id": "RedstoneArsenal:armor.helmetFlux",
+                "nbt": "{Energy:0}"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "RedstoneArsenal:armor.plateFlux",
+                "nbt": "{Energy:0}"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "RedstoneArsenal:armor.legsFlux",
+                "nbt": "{Energy:0}"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "RedstoneArsenal:armor.bootsFlux",
+                "nbt": "{Energy:0}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Iron Man",
+      "description": "The Flux-Infused JetPlate is the final tier of the Thermal Expansion path with Simply Jetpacks. It has the same armor rating as the regular Flux-Infused Chestplate, and works as a very fast jetpack.",
+      "x": 181,
+      "y": 108,
+      "icon": {
+        "id": "simplyjetpacks:jetpacks",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Coated in Redstone",
+        "Almost Best Flying",
+        "Unnamed5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Flux-Infused JetPlate",
+          "longDescription": "The Flux-Infused JetPlate can store 50M RF.",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:jetpacks",
+                "damage": 5,
+                "nbt": "{PackOn:1b,JetpackHoverModeOn:0b,JetPlateChargerOn:1b,JetpackParticleType:0}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Immersive Energy Storage",
+      "description": "Storing energy is just as important as creating it. The Immersive Engineering Capacitors are a great way to store energy early to mid game.",
+      "x": 85,
+      "y": 191,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice",
+        "damage": 1
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[Baking Bad]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make an MV Capacitor",
+          "longDescription": "Immersive Engineering cables convert RF and EU, so this works as storage for both!",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDevice",
+                "damage": 3
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "For the Birds",
+      "description": "Immersive Engineering\u0027s Wire Coils, while being excellently stylish, also serve to transfer RF and EU. It will also convert them! 1 EU is equal to 4 RF.",
+      "x": 114,
+      "y": 191,
+      "icon": {
+        "id": "ImmersiveEngineering:coil",
+        "damage": 1
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[This Ruins my Aesthetics!]",
+        "{It\u0027s Like a Whole New Game}[Baking Bad]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Set up LV Wire Coils",
+          "longDescription": "Place the Wire Connectors on the blocks you wish to transfer between, then click both with the Wire Coil to connect them.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDevice"
+              },
+              "required": 2,
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:coil"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nega-Stark",
+      "description": "Ender IO\u0027s Dark Armor has many upgrades to make the armor better and more powerful. The upgrades are applied in an Anvil, by putting the armor piece together with certain items using XP. Hold shift while hovering over them in your inventory to see what upgrades you can apply, and what they do.",
+      "x": 85,
+      "y": 13,
+      "icon": {
+        "id": "EnderIO:item.darkSteel_chestplate"
+      },
+      "prerequisites": [
+        "Advanced Combining"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Dark Armor",
+          "longDescription": "Without upgrades, Dark Armor takes full durability damage without any RF storage. The more Empowered upgrades applied, the more RF it stores and the less durability damage it takes. However, even when fully upgraded, it does take some durability damage, so you will have to eventually repair it with more Dark Steel.",
+          "items": [
+            {
+              "item": {
+                "id": "EnderIO:item.darkSteel_helmet"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "EnderIO:item.darkSteel_chestplate"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "EnderIO:item.darkSteel_leggings"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "EnderIO:item.darkSteel_boots"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Questionably Moral Flight",
+      "description": "The Dark Soularium JetPlate is the final tier of the Ender IO path of Simply Jetpacks. While it doesn\u0027t use one, it has the same armor rating as a Dark Plate, and works as a very fast jetpack.",
+      "x": 193,
+      "y": 90,
+      "icon": {
+        "id": "simplyjetpacks:jetpacksEIO",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Vibrant Jetpack",
+        "2^3 Portable Energy"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Dark Soularium JetPlate",
+          "longDescription": "The Dark Soularium JetPlate works can store 50M RF.",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:jetpacksEIO",
+                "damage": 5,
+                "nbt": "{PackOn:1b,JetpackHoverModeOn:0b,JetPlateChargerOn:1b,JetpackParticleType:0}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Who Needs Ladders?",
+      "description": "Jetpacks are extremely useful in that you can use them to fly, which is much faster than climbing ladders, not to mention you can do it anywhere. This tier isn\u0027t very fast, and only stores 25,000 RF and uses 10 RF/t while flying, but it\u0027s better than nothing!",
+      "x": 223,
+      "y": 184,
+      "icon": {
+        "id": "simplyjetpacks:jetpacks",
+        "damage": 1,
+        "nbt": "{PackOn:1b,JetpackHoverModeOn:0b,JetpackParticleType:0}"
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[So Heats]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Leadstone Jetpack",
+          "longDescription": "Simply Jetpacks has 2 paths you can use for jetpacks: Thermal Expansion or Ender IO. These quests are for Thermal Expansion.",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:jetpacks",
+                "damage": 1
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Almost Best Flying",
+      "description": "The second-to-last tier of TE jetpack is the Resonant Jetpack. It\u0027s even faster, stores 10,000,000 RF, and uses 200 RF/t while flying.",
+      "x": 194,
+      "y": 127,
+      "icon": {
+        "id": "simplyjetpacks:jetpacks",
+        "damage": 4
+      },
+      "prerequisites": [
+        "More Better Flying"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Resonant Jetpack",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:jetpacks",
+                "damage": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "More Better Flying",
+      "description": "The next highest tier for TE jetpacks is the Vibrant Jetpack. It is very fast, stores 2,000,000 RF, and uses 100 RF/t while in use.",
+      "x": 204,
+      "y": 145,
+      "icon": {
+        "id": "simplyjetpacks:jetpacks",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Better Flying"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Vibrant Jetpack",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:jetpacks",
+                "damage": 3
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Better Flying",
+      "description": "The next tier of TE jetpacks is the Hardened Jetpack. It\u0027s faster, and stores 400,000 RF, and uses 50 RF/t when flying.",
+      "x": 214,
+      "y": 165,
+      "icon": {
+        "id": "simplyjetpacks:jetpacks",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Who Needs Ladders?"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Hardened Jetpack",
+          "longDescription": "You can craft armor plating to put on jetpacks! And you can remove it just as easy!",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:jetpacks",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed5",
+      "description": "The second-highest tier of Flux Pack is the Resonant Flux Pack. It can store 50,000,000 RF and can input/output at 10,000 RF/t.",
+      "x": 171,
+      "y": 126,
+      "icon": {
+        "id": "simplyjetpacks:fluxpacks",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Very Portable Energy"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Resonant Flux Pack",
+          "longDescription": "The Resonant Flux Pack is required to craft the Flux-Infused JetPlate, the highest tier of Flux/Jet pack",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:fluxpacks",
+                "damage": 4
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Very Portable Energy",
+      "description": "The next tier of Flux Pack is the Redstone Flux Pack. It can store 10,000,000 RF, and can input/output at 2,000 RF/t.",
+      "x": 183,
+      "y": 146,
+      "icon": {
+        "id": "simplyjetpacks:fluxpacks",
+        "damage": 3
+      },
+      "prerequisites": [
+        "More Portable, More Energy"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Redstone Flux Pack",
+          "longDescription": "Naturally, the higher tiers can have better armor applied to them.",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:fluxpacks",
+                "damage": 3,
+                "nbt": "{PackOn:1b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "More Portable, More Energy",
+      "description": "The second tier of Flux Pack stores 2,000,000 RF, and can send/recieve 400 RF/t.",
+      "x": 193,
+      "y": 164,
+      "icon": {
+        "id": "simplyjetpacks:fluxpacks",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Portable Energy"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Hardened Flux Pack",
+          "longDescription": "From this tier onwards, you can apply armor to your Flux Packs. You can also take them off just as easy, and you get to keep the armor plating!",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:fluxpacks",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Portable Energy",
+      "description": "Flux Packs are worn as chestplates and will charge all your armor and held items (that CAN be charged) with RF. There are several tiers, but this is the first.",
+      "x": 202,
+      "y": 183,
+      "icon": {
+        "id": "simplyjetpacks:fluxpacks",
+        "damage": 1
+      },
+      "prerequisites": [
+        "{It\u0027s Like a Whole New Game}[So Heats]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Leadstone Flux Pack",
+          "longDescription": "The Leadstone Flux Pack holds 400,000 RF, and can send/recieve 80 RF/t.",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:fluxpacks",
+                "damage": 1
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Conductive Jetpack",
+      "description": "The Conductive Jetpack is the first tier of Ender IO jetpacks. It can store 25,000 RF and uses 10 RF/t to fly.",
+      "x": 188,
+      "y": 14,
+      "icon": {
+        "id": "simplyjetpacks:jetpacksEIO",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Advanced Combining"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Conductive Iron Jetpack",
+          "longDescription": "You can put armor on the jetpacks, to make them protect as well as give utility.",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:jetpacksEIO",
+                "damage": 1,
+                "nbt": "{PackOn:1b,JetpackHoverModeOn:0b,JetpackParticleType:0}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Electrical Steel Jetpack",
+      "description": "The next tier of Ender IO jetpacks is the Electrical Steel Jetpack. It can store 400,000 RF and uses 50 RF/t to fly.",
+      "x": 183,
+      "y": 36,
+      "icon": {
+        "id": "simplyjetpacks:jetpacksEIO",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Conductive Jetpack"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Electrical Steel Jetpack",
+          "longDescription": "Each tier of jetpack is faster than the last.",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:jetpacksEIO",
+                "damage": 2,
+                "nbt": "{PackOn:1b,JetpackHoverModeOn:0b,JetpackParticleType:0}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Energetic Jetpack",
+      "description": "The next tier of Ender IO jetpack is the Energetic Jetpack. It can store 2,000,000 RF and uses 100 RF/t to fly.",
+      "x": 190,
+      "y": 54,
+      "icon": {
+        "id": "simplyjetpacks:jetpacksEIO",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Electrical Steel Jetpack"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Energetic Backpack",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:jetpacksEIO",
+                "damage": 3,
+                "nbt": "{PackOn:1b,JetpackHoverModeOn:0b,JetpackParticleType:0}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vibrant Jetpack",
+      "description": "The second highest tier of Ender IO jetpack is the Vibrant Jetpack. It can store 10,000,000 RF and uses 200 RF/t to fly.",
+      "x": 181,
+      "y": 72,
+      "icon": {
+        "id": "simplyjetpacks:jetpacksEIO",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Energetic Jetpack"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Vibrant Jetpack",
+          "longDescription": "Technically this is the highest tier of Ender IO JETPACK, as the next tier also includes a Capacitor Pack",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:jetpacksEIO",
+                "damage": 4,
+                "nbt": "{PackOn:1b,JetpackHoverModeOn:0b,JetpackParticleType:0}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2^3 Portable Energy",
+      "description": "The second-to-last tier of Capcitor Pack is the Octadic Capacitor Pack. It can store 50,000,000 RF and can I/O at 10,000 RF/t. ",
+      "x": 203,
+      "y": 70,
+      "icon": {
+        "id": "simplyjetpacks:fluxpacksEIO",
+        "damage": 4
+      },
+      "prerequisites": [
+        "2^2 Portable Energy"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Octadic Capacitor Pack",
+          "longDescription": "Technically this is the highest tier Capacitor Pack, because the next tier also has a Jetpack.",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:fluxpacksEIO",
+                "damage": 4,
+                "nbt": "{PackOn:1b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2^2 Portable Energy",
+      "description": "The next tier of Capacitor Pack is the Quadruple-Layer Capacitor Pack. It stores 10,000,000 RF and can I/O at 2,000 RF/t.",
+      "x": 212,
+      "y": 50,
+      "icon": {
+        "id": "simplyjetpacks:fluxpacksEIO",
+        "damage": 3
+      },
+      "prerequisites": [
+        "2^1 Portable Energy"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Quad-Layer Capacitor Pack",
+          "longDescription": "Naturally, higher tiers can have better armor attatched.",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:fluxpacksEIO",
+                "damage": 3,
+                "nbt": "{PackOn:1b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2^1 Portable Energy",
+      "description": "The next tier of Capacitor Pack is the Double-Layer Capacitor Pack. It can hold 2,000,000 RF and can I/O at 400 RF/t.",
+      "x": 199,
+      "y": 32,
+      "icon": {
+        "id": "simplyjetpacks:fluxpacksEIO",
+        "damage": 2
+      },
+      "prerequisites": [
+        "2^0 Portable Energy"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Double-Layer Capacitor Pack",
+          "longDescription": "From this tier on, the Capacitor Packs can have armor applied to them.",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:fluxpacksEIO",
+                "damage": 2,
+                "nbt": "{PackOn:1b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2^0 Portable Energy",
+      "description": "Simply Jetpacks also adds Capacitor Packs, which are worn as chestplates and charge your held items and armor.",
+      "x": 209,
+      "y": 14,
+      "icon": {
+        "id": "simplyjetpacks:fluxpacksEIO",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Advanced Combining"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Basic Capacitor Pack",
+          "longDescription": "The Basic Capacitor Pack holds 400,000 RF and can I/O at 80 RF/t.",
+          "items": [
+            {
+              "item": {
+                "id": "simplyjetpacks:fluxpacksEIO",
+                "damage": 1,
+                "nbt": "{PackOn:1b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}
