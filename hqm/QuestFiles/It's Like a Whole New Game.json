@@ -5,8 +5,8 @@
     {
       "name": "You\u0027re Gonna Get Splinters",
       "description": "Punching trees! Getting wood! Excitement! Logs only give 2 planks now, however.",
-      "x": 157,
-      "y": 12,
+      "x": 55,
+      "y": 11,
       "icon": {
         "id": "minecraft:log"
       },
@@ -25,13 +25,18 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:stone_axe"
+        }
       ]
     },
     {
       "name": "Tinkering",
-      "description": "Vanilla tools above stone (aside from hoes) are useless except for crafting recipes. You want to use Tinkers\u0027 Construct mostly. However, without a Smeltery, you can only use flint or other non-metallic tools. These are the blocks required to make Tinkers\u0027 tools. Don\u0027t spend too much making these, as they will be made obsolete by metal tools once those are made available.",
-      "x": 157,
-      "y": 44,
+      "description": "Vanilla tools above stone (aside from hoes) are useless except for crafting recipes. You want to use Tinkers\u0027 Construct mostly. However, without a Smeltery, you can only use flint or other non-metallic tools. These are the blocks required to make Tinkers\u0027 tools. Don\u0027t spend too much making these, as they will be made obsolete by metal tools once those are made available. These quests REQUIRE the oak variants to be completed.",
+      "x": 86,
+      "y": 62,
       "icon": {
         "id": "TConstruct:ToolStationBlock"
       },
@@ -87,16 +92,22 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "TConstruct:blankPattern",
+          "amount": 8
+        }
       ]
     },
     {
       "name": "I\u0027ve Got Balls of Moss",
       "description": "The Ball of Moss is an invaluable modifier, even at late game. Tools with the modifier slowly automatically repair themselves. This saves a ton of resources because you won\u0027t have to repair the tool ever. Also, if you want to get the Sharpness upgrade, 3 Certus Quartz is an entire level as opposed to the giant amount of Nether Quartz it would usually take.",
-      "x": 120,
-      "y": 44,
+      "x": 52,
+      "y": 81,
       "icon": {
         "id": "TConstruct:pickaxe",
-        "nbt": "{InfiTool:{BaseDurability:171,Head:3,BaseAttack:3,Moss:3,Tooltip1:\"Â§2Auto-Repair\",Effect1:4,HarvestLevel:1,ModifierTip1:\"Â§2Moss\",Attack:3,RenderHead:3,ModDurability:0.0f,Handle:0,Broken:0b,Shoddy:0.0f,RenderHandle:0,Accessory:0,MiningSpeed:525,RenderAccessory:0,Unbreaking:0,Damage:0,BonusDurability:0,TotalDurability:171,Modifiers:2},display:{Name:\"Â§fFlint Pickaxe\"}}"
+        "nbt": "{InfiTool:{BaseDurability:171,Head:3,BaseAttack:3,Moss:3,Tooltip1:\"§2Auto-Repair\",Effect1:4,HarvestLevel:1,ModifierTip1:\"§2Moss\",Attack:3,RenderHead:3,ModDurability:0.0f,Handle:0,Broken:0b,Shoddy:0.0f,RenderHandle:0,Accessory:0,MiningSpeed:525,RenderAccessory:0,Unbreaking:0,Damage:0,BonusDurability:0,TotalDurability:171,Modifiers:2},display:{Name:\"§fFlint Pickaxe\"}}"
       },
       "prerequisites": [
         "Tinkering"
@@ -120,8 +131,8 @@
     {
       "name": "What\u0027s Up, Hotstuff?",
       "description": "A Smeltery is an essential tool for the young Tinkerer. If you don\u0027t want to crawl along the bottom of rivers and swamps for clay and sand, you can often find smeltery parts in Villages. The Smeltery is fueled by Lava in the Seared Tank, and also doubles ore output. A good tool to make Pickaxe Heads out of is Bronze, an alloy of Copper and Tin at a 3:1 ratio.",
-      "x": 157,
-      "y": 80,
+      "x": 132,
+      "y": 88,
       "icon": {
         "id": "TConstruct:Smeltery"
       },
@@ -132,7 +143,7 @@
         {
           "type": "DETECT",
           "description": "Make a Smeltery",
-          "longDescription": "For the average 3x3x1 interior Smeltery, you need a total of 104 Seared Bricks (the item). That amounts to 52 Sand, 52 Gravel, and 52 Clay.",
+          "longDescription": "For the average 3x3x1 interior Smeltery, you need a total of 104 Seared Bricks (the item). That amounts to 104 (64+40) Sand, Gravel, and Clay.",
           "items": [
             {
               "item": {
@@ -170,13 +181,19 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "Forestry:canLava",
+          "amount": 4
+        }
       ]
     },
     {
       "name": "Who Made Buckets So Hard?",
       "description": "As you may or may not have noticed, the recipe for Buckets has drastically changed. In the meanwhile, Lava can be moved to a Smeltery via the Can from Forestry! You can use it for other stuff too, I guess. They cannot place fluids in the world, however.",
-      "x": 198,
-      "y": 80,
+      "x": 134,
+      "y": 143,
       "icon": {
         "id": "Forestry:canEmpty"
       },
@@ -196,13 +213,19 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "Forestry:canLava",
+          "amount": 4
+        }
       ]
     },
     {
       "name": "Grinding Gears",
       "description": "Gears can currently only be created using the Gear Cast and the metal the Gear is made of.",
-      "x": 157,
-      "y": 116,
+      "x": 181,
+      "y": 88,
       "icon": {
         "id": "ThermalFoundation:material",
         "damage": 12
@@ -228,8 +251,8 @@
     {
       "name": "Infinite Cosmic Power!",
       "description": "Itty-bitty generation speed. The Survivalist Generator is incredibly slow, but fuel efficient. It\u0027s also probably the only thing you can make right now, so you\u0027ve gotta deal with it for a while.",
-      "x": 116,
-      "y": 94,
+      "x": 175,
+      "y": 144,
       "icon": {
         "id": "ExtraUtilities:generator"
       },
@@ -255,9 +278,8 @@
     {
       "name": "Baking Bad",
       "description": "The Coke Oven is an integral part of Expert Mode, mostly because of the Creosote it produces. The Coal Coke doesn\u0027t hurt either. It might be good to automate this fairly quickly, which can be done with just a hopper going in and one coming out, with some Cans or something similar to collect the Creosote.",
-      "x": 195,
-      "y": 186,
-      "bigicon": true,
+      "x": 265,
+      "y": 13,
       "icon": {
         "id": "ImmersiveEngineering:stoneDecoration",
         "damage": 1
@@ -297,13 +319,23 @@
             }
           ]
         }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Railcraft:fluid.creosote.can",
+          "amount": 8
+        },
+        {
+          "id": "ImmersiveEngineering:stoneDecoration",
+          "damage": 3
+        }
       ]
     },
     {
       "name": "Tools of the Trade",
       "description": "These tools are rather inneficient but early-game methods of getting parts for machinery.",
-      "x": 158,
-      "y": 188,
+      "x": 300,
+      "y": 12,
       "icon": {
         "id": "IC2:itemToolForgeHammer"
       },
@@ -340,8 +372,8 @@
     {
       "name": "So Heats",
       "description": "These machines create items that are used in many machine crafting recipes.",
-      "x": 158,
-      "y": 151,
+      "x": 212,
+      "y": 143,
       "icon": {
         "id": "BuildCraft|Silicon:laserBlock"
       },
@@ -386,42 +418,19 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "name": "Screw Hammers, Seriously",
-      "description": "How many Forge Hammers have you made so far? Check your Statistics! $20 on it being more than 5. The Metal Former uses EU to turn Ingots into Plates, Cables, and many other things that usually would take and break a Forge Hammer and a Cutter.",
-      "x": 194,
-      "y": 152,
-      "icon": {
-        "id": "IC2:blockMachine2",
-        "damage": 4
-      },
-      "prerequisites": [
-        "So Heats"
       ],
-      "tasks": [
+      "reward": [
         {
-          "type": "DETECT",
-          "description": "Get a Metal Former",
-          "longDescription": "The Metal Former uses EU, not RF, so you can\u0027t just connect this to your Fluxducts or Energy Conduits or however you\u0027ve decided to move RF around. You need to use Cables, preferably Insulated ones. You can convert RF into EU and back using Immersive Engineering Connectors and Wires.",
-          "items": [
-            {
-              "item": {
-                "id": "IC2:blockMachine2",
-                "damage": 4
-              },
-              "precision": "NBT_FUZZY"
-            }
-          ]
+          "id": "BuildCraft|Silicon:laserBlock",
+          "amount": 5
         }
       ]
     },
     {
       "name": "Wait, HOW Long?!?!",
       "description": "Pure Certus Quartz is super important for stuff right? What do you mean isn\u0027t this a little early for getting Pure Certus Quartz? Didn\u0027tcha know? Certus Quartz Seeds now take SIXTEEN FULL REAL LIFE HOURS TO GROW.",
-      "x": 268,
-      "y": 139,
+      "x": 269,
+      "y": 91,
       "icon": {
         "id": "appliedenergistics2:item.ItemMultiMaterial",
         "damage": 10
@@ -452,47 +461,37 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "name": "Water Cooled",
-      "description": "Water Wheels generate RF based on the amount of flowing water blocks are touching.",
-      "x": 236,
-      "y": 189,
-      "icon": {
-        "id": "ImmersiveEngineering:woodenDevice",
-        "damage": 1
-      },
-      "prerequisites": [
-        "Baking Bad"
       ],
-      "tasks": [
+      "reward": [
         {
-          "type": "DETECT",
-          "description": "Set Up a Water Mill",
-          "longDescription": "Place down the Kinetic Dynamo and then place the Water Wheel on the side.",
-          "items": [
-            {
-              "item": {
-                "id": "ImmersiveEngineering:metalDevice",
-                "damage": 9
-              }
-            },
-            {
-              "item": {
-                "id": "ImmersiveEngineering:woodenDevice",
-                "damage": 1
-              }
-            }
-          ]
+          "id": "appliedenergistics2:item.ItemMultiMaterial",
+          "damage": 10,
+          "amount": 8
+        },
+        {
+          "id": "appliedenergistics2:item.ItemMultiMaterial",
+          "damage": 12,
+          "amount": 8
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "appliedenergistics2:item.ItemMultiMaterial",
+          "damage": 10,
+          "amount": 16
+        },
+        {
+          "id": "appliedenergistics2:item.ItemMultiMaterial",
+          "damage": 12,
+          "amount": 16
         }
       ]
     },
     {
       "name": "This Ruins my Aesthetics!",
       "description": "The vanilla furnace recipe has been changed to instead give a Slab Furnace. They are functionally identical, but the Slab Furnace takes up only half a block. You can\u0027t put 2 in the same block, but you can make functional stairs out of it I guess.",
-      "x": 198,
-      "y": 13,
+      "x": 30,
+      "y": 51,
       "icon": {
         "id": "minecraft:furnace"
       },
@@ -524,13 +523,19 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:coal",
+          "amount": 8
+        }
       ]
     },
     {
       "name": "Grinding Away",
       "description": "There are some recipes that reqire metal dusts instead of ingots. These dusts can be created using the Quartz Grindstone. Place the Grindstone, place the Crank on it, and hold right click on the Crank to, well, crank it. You can put metals or ores in the top left, and the dusts are put into the bottom right slots. A single ore turns into 2 dusts, which are smelted into an ingot each, so this can be used for early-game ore doubling.",
-      "x": 238,
-      "y": 139,
+      "x": 240,
+      "y": 68,
       "icon": {
         "id": "appliedenergistics2:tile.BlockGrinder"
       },
@@ -542,6 +547,7 @@
         {
           "type": "DETECT",
           "description": "Set up the Grindstone",
+          "longDescription": "Cranks will break if you they are used when the Grindstone has nothing to grind.",
           "items": [
             {
               "item": {
@@ -558,92 +564,10 @@
       ]
     },
     {
-      "name": "Bigger on the Inside",
-      "description": "The Iron Chests mod adds new chests made of different metals with more inventory space.",
-      "x": 102,
-      "y": 165,
-      "icon": {
-        "id": "IronChest:BlockIronChest"
-      },
-      "prerequisites": [
-        "Tools of the Trade"
-      ],
-      "tasks": [
-        {
-          "type": "DETECT",
-          "description": "Make an Iron Chest",
-          "items": [
-            {
-              "item": {
-                "id": "IronChest:BlockIronChest"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Microwaves",
-      "description": "The Electric Furnace uses EU to smelt items, similar to the Furnace. It\u0027s probably the first energy-powered furnace that will be available to you.",
-      "x": 115,
-      "y": 143,
-      "icon": {
-        "id": "IC2:blockMachine",
-        "damage": 2
-      },
-      "prerequisites": [
-        "So Heats"
-      ],
-      "tasks": [
-        {
-          "type": "DETECT",
-          "description": "Make an Electric Furnace",
-          "items": [
-            {
-              "item": {
-                "id": "IC2:blockMachine",
-                "damage": 2
-              },
-              "precision": "NBT_FUZZY"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Macrowave",
-      "description": "The Induction Furnace is an upgraded version of the Electric Furnace. It has an interesting mechanic where the longer it\u0027s running, the faster it smelts. At max speed, it\u0027s much faster than the Electric Furnace. To keep it running, and therefor hot, while no items are inside of it, you can give it a redstone signal. However, it uses EU so long as it runs, even if empty. If you want to keep it running without having a lever on it, you can put a Redstone Signal Inverter Upgrade in it, which will make it think it has a signal when it doesnt, and vice-versa.",
-      "x": 82,
-      "y": 143,
-      "icon": {
-        "id": "IC2:blockMachine",
-        "damage": 13
-      },
-      "prerequisites": [
-        "Microwaves"
-      ],
-      "tasks": [
-        {
-          "type": "DETECT",
-          "description": "Make an Induction Furnace",
-          "longDescription": "The Induction Furnace can also smelt 2 items at the same time.",
-          "items": [
-            {
-              "item": {
-                "id": "IC2:blockMachine",
-                "damage": 13
-              },
-              "precision": "NBT_FUZZY"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Goes Great with Pancakes!",
       "description": "Rubber can be gotten in 2 ways.",
-      "x": 120,
-      "y": 12,
+      "x": 22,
+      "y": 11,
       "icon": {
         "id": "IC2:itemTreetap"
       },
@@ -698,42 +622,23 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "name": "More Rubber!",
-      "description": "The Extractor uses EU to extract extra rubber from Sticky Resin and Rubber Wood.",
-      "x": 124,
-      "y": 165,
-      "icon": {
-        "id": "IC2:blockMachine",
-        "damage": 4
-      },
-      "prerequisites": [
-        "Tools of the Trade",
-        "So Heats"
       ],
-      "tasks": [
+      "rewardchoice": [
         {
-          "type": "DETECT",
-          "description": "Make an Extractor",
-          "items": [
-            {
-              "item": {
-                "id": "IC2:blockMachine",
-                "damage": 4
-              },
-              "precision": "NBT_FUZZY"
-            }
-          ]
+          "id": "IC2:itemRubber",
+          "amount": 16
+        },
+        {
+          "id": "MineFactoryReloaded:rubber.bar",
+          "amount": 16
         }
       ]
     },
     {
       "name": "36 Slots Ain\u0027t Enough",
       "description": "The Knapsack goes into your Tinkers\u0027 Construct inventory, the Diamond Chestplate tab at the top. It gives you another tab that allows you to store a small chest\u0027s worth of items in it.",
-      "x": 102,
-      "y": 69,
+      "x": 81,
+      "y": 117,
       "icon": {
         "id": "TConstruct:knapsack"
       },
@@ -757,12 +662,13 @@
       ]
     },
     {
-      "name": "More Wood!",
-      "description": "The Lumbermill uses RF and Water to turn Logs into 6 Planks each, in addition to Bark and Sawdust.",
-      "x": 201,
-      "y": 109,
+      "name": "Just a Hobby",
+      "description": "The Hobbyist\u0027s Steam Engine is a great early-game way to generate RF. It uses furnace fuel, such as coal, to heat up water that can be piped in and turn it into Steam. The Steam is then converted into RF if it can leave the engine.",
+      "x": 243,
+      "y": 124,
       "icon": {
-        "id": "ExtraTrees:machine"
+        "id": "Railcraft:machine.beta",
+        "damage": 7
       },
       "prerequisites": [
         "Grinding Gears"
@@ -770,11 +676,13 @@
       "tasks": [
         {
           "type": "DETECT",
-          "description": "Make a Lumbermill",
+          "description": "Make Hobbyist\u0027s Steam Engine",
+          "longDescription": "The Hobbyist\u0027s Steam Engine will only begin to create Steam, and thus RF, after the internal temperature reaches 100°C. Give it a redstone signal to turn it on.",
           "items": [
             {
               "item": {
-                "id": "ExtraTrees:machine"
+                "id": "Railcraft:machine.beta",
+                "damage": 7
               },
               "precision": "NBT_FUZZY"
             }
@@ -783,79 +691,29 @@
       ]
     },
     {
-      "name": "Amp it Up!",
-      "description": "The Turning Table is a special machine that creates items needed in crafting recipes.",
-      "x": 113,
-      "y": 191,
+      "name": "Slow and Steady",
+      "description": "A rather slow, but easy to set up method to get Steel is the Immersive Engineering Blast Furnace. A single Steel Ingot takes 60 seconds to bake. You need to use Coal Coke as fuel, you can\u0027t use anything else.",
+      "x": 286,
+      "y": 47,
       "icon": {
-        "id": "IC2:blockMachine3",
-        "damage": 8
+        "id": "ImmersiveEngineering:stoneDecoration",
+        "damage": 2
       },
       "prerequisites": [
-        "Tools of the Trade"
+        "Baking Bad"
       ],
       "tasks": [
         {
           "type": "DETECT",
-          "description": "Make Electric Kinetic Generator",
-          "longDescription": "The Turning Table does not use EU, but kinetic energy (kU). The Electric Kinetic Generator turns EU into kU, provided it has Electric Motors inside of it, the more the better. The sides that have a circle are the sides that have kU output from them.",
+          "description": "Make the Blast Furnace",
+          "longDescription": "There are 3 recipes to make the Blast Bricks: Glue, which requires you to stick a Horse into a Smeltery; Ender Pearls; and TNT. Make a 3x3x3 and click the center with an Engineer\u0027s Hammer.",
           "items": [
             {
               "item": {
-                "id": "IC2:blockKineticGenerator",
+                "id": "ImmersiveEngineering:stoneDecoration",
                 "damage": 2
               },
-              "precision": "NBT_FUZZY"
-            },
-            {
-              "item": {
-                "id": "IC2:itemRecipePart",
-                "damage": 1
-              },
-              "precision": "NBT_FUZZY"
-            }
-          ]
-        },
-        {
-          "type": "DETECT",
-          "description": "Make a Turning Table",
-          "longDescription": "The Turning Table takes in kU from any side. Place an Iron Turning Blank into the very top left slot, and a Lathing Tool into the slot just below that. Using NEI, you can find recipes that need Iron Turning Blanks of specific types. Check their recipes to see the correct configuration for that recipe. There are 5 buttons with a Lathing Tool in the GUI. By default, all are at 5/5. To remove 1/5 from it a layer, click the Lathing Tool above it. For instance, the Handle type Iron Turning Blank requires 4/5, 3/5, 2/5, 2/5, 2/5. To do this, click the first one twice, second one thrice, and third, fourth, and fifth four times.",
-          "items": [
-            {
-              "item": {
-                "id": "IC2:blockMachine3",
-                "damage": 8
-              },
-              "precision": "NBT_FUZZY"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Wazer Wifle",
-      "description": "The Mining Laser is a mining tool, that shoots lasers. Pretty straight forward. The Mining Laser has many modes: Mining, with normal beam and average power usage; Low-focus, with a very short beam range and low energy usage; Long-range, with a stronger beam that can penetrate more blocks and a higher energy usage; Scatter, shoots 25 beams in front of you, shotgun style, with an average power usage multiplied per beam; Explosive, beam explodes upon hitting a block, higher power usage; Horizontal, same as mining mode except the beam can only move horizontally; and Super-heat, where blocks drop what they regularly smelt into if possible (ie, if you shoot Iron Ore, it will drop an Iron Ingot). To change the mode, go into your conrols and find IC2 Mode Switch Key, and hold that and right click with the Mining Laser in your hand.",
-      "x": 76,
-      "y": 190,
-      "icon": {
-        "id": "IC2:itemToolMiningLaser",
-        "damage": 26
-      },
-      "prerequisites": [
-        "Amp it Up!"
-      ],
-      "tasks": [
-        {
-          "type": "DETECT",
-          "description": "Get a Mining Laser",
-          "longDescription": "The Mining Laser needs a Handle type Iron Turning Blank.",
-          "items": [
-            {
-              "item": {
-                "id": "IC2:itemToolMiningLaser",
-                "damage": 26
-              },
-              "precision": "NBT_FUZZY"
+              "required": 27
             }
           ]
         }
