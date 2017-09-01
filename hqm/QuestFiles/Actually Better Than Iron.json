@@ -79,7 +79,7 @@
         {
           "type": "DETECT",
           "description": "Set up the Heat Generator",
-          "longDescription": "The Blast Furnace does not use EU /or/ RF. It uses heat, which we will get using the Electric Heat Generator. EU comes into the Heat Generator from any side, except for the orange one, which is where heat comes out of. You need to have Coils in the Heat Generator as well. 2EU \u003d 1hU.",
+          "longDescription": "The Blast Furnace does not use EU /or/ RF. It uses heat, which we will get using the Electric Heat Generator. EU comes into the Heat Generator from any side, except for the orange one, which is where heat comes out of. You need to have Coils in the Heat Generator as well. 2EU \u003d 1hU. You cannot power the Electric Heat Generator directly through IE Wire Coils, you have to go through a BatBox (or any other IC2 storage) first.",
           "items": [
             {
               "item": {
@@ -135,6 +135,13 @@
               "precision": "ORE_DICTIONARY"
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ImmersiveEngineering:metal",
+          "damage": 7,
+          "amount": 15
         }
       ]
     },
@@ -282,6 +289,12 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "EnderStorage:enderChest",
+          "damage": 4096
+        }
       ]
     },
     {
@@ -307,6 +320,14 @@
               "precision": "NBT_FUZZY"
             }
           ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "EnderIO:item.darkSteel_shears"
+        },
+        {
+          "id": "EnderIO:item.darkSteel_axe"
         }
       ]
     },
@@ -407,14 +428,14 @@
         },
         {
           "type": "DETECT",
-          "description": "Make 4 Inscribers",
-          "longDescription": "In order to automate the Inscribers without having to move around the Presses, you need 4 Inscribers. A good method of automating Inscribers is using Steve\u0027s Factory Manager.",
+          "description": "Make 5 Inscribers",
+          "longDescription": "In order to automate the Inscribers without having to move around the Presses, you need 5 Inscribers: 4 for the Inscriber Presses and 1 for making them into Processors. A good method of automating Inscribers is using Steve\u0027s Factory Manager.",
           "items": [
             {
               "item": {
                 "id": "appliedenergistics2:tile.BlockInscriber"
               },
-              "required": 4,
+              "required": 5,
               "precision": "NBT_FUZZY"
             }
           ]
@@ -589,11 +610,17 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "ExtraUtilities:cobblestone_compressed",
+          "amount": 32
+        }
       ]
     },
     {
       "name": "Water Cooled",
-      "description": "Water Wheels generate RF based on the amount of flowing water blocks are touching.",
+      "description": "Water Wheels generate RF based on the amount of flowing water blocks are touching it. All the water blocks have to be flowing with the wheel. You can have up to 3 Water Wheels per Kinetic Dynamo.",
       "x": 189,
       "y": 70,
       "icon": {
@@ -608,7 +635,7 @@
         {
           "type": "DETECT",
           "description": "Set Up a Water Mill",
-          "longDescription": "Place down the Kinetic Dynamo and then place the Water Wheel on the side.",
+          "longDescription": "Place down the Kinetic Dynamo and then place the Water Wheel on the side that looks like a copper coil. RF can be piped out from any side.",
           "items": [
             {
               "item": {
