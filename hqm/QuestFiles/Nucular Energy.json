@@ -13,7 +13,7 @@
       },
       "prerequisites": [
         "{Actually Better Than Iron}[Dwayne \"The Rock\" Crusher]",
-        "{It\u0027s Like a Whole New Game}[Wazer Wifle]"
+        "{Miscallaneous Machines}[Wazer Wifle]"
       ],
       "tasks": [
         {
@@ -126,14 +126,14 @@
     {
       "name": "ME-ME Matter",
       "description": "UU-Matter is very useful. It allows you to turn EU into almost any item.",
-      "x": 118,
-      "y": 17,
+      "x": 84,
+      "y": 19,
       "icon": {
         "id": "IC2:itemCellEmpty",
         "damage": 3
       },
       "prerequisites": [
-        "Whose Ranium?"
+        "Protecting Your Base"
       ],
       "tasks": [
         {
@@ -152,7 +152,7 @@
         },
         {
           "type": "DETECT",
-          "description": "Make a Scanner+Pattern Storage",
+          "description": "Scanner+Pattern Storage",
           "longDescription": "The Scanner breaks down an item or block and puts it\u0027s pattern into a Pattern Storage block touching it.",
           "items": [
             {
@@ -189,9 +189,9 @@
     },
     {
       "name": "Lemme At \u0027Em!",
-      "description": "Scrap significantly speeds up the Mass Fabricator.",
-      "x": 76,
-      "y": 16,
+      "description": "Scrap significantly speeds up the Mass Fabricator. Scrap Boxes do even more.",
+      "x": 84,
+      "y": 52,
       "icon": {
         "id": "IC2:itemScrap"
       },
@@ -212,6 +212,12 @@
               "precision": "NBT_FUZZY"
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "IC2:itemScrapbox",
+          "amount": 16
         }
       ]
     },
@@ -246,13 +252,13 @@
     {
       "name": "Protecting Your Base",
       "description": "The Nuclear Reactor is very... explodey. One of the best blocks to protect your base from meeting it\u0027s untimely demise is Reinforced Stone. A double layer of Reinforced Stone is best for completely neutralizing a Nuclear Reactor\u0027s explosion.",
-      "x": 201,
-      "y": 59,
+      "x": 122,
+      "y": 18,
       "icon": {
         "id": "IC2:blockAlloy"
       },
       "prerequisites": [
-        "Explosive Fun!"
+        "Whose Ranium?"
       ],
       "tasks": [
         {
@@ -293,6 +299,12 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "IC2:blockAlloy",
+          "amount": 8
+        }
       ]
     },
     {
@@ -310,6 +322,7 @@
         {
           "type": "DETECT",
           "description": "Get the Depleted Uranium",
+          "longDescription": "Once a Nuclear Reactor has been running for long enough, the Fuel Rods will become Depleted. Depleted Fuel Rods do not generate EU in the Reactor, and only serve to be put back into the Thermal Centrifuge.",
           "items": [
             {
               "item": {
@@ -348,14 +361,14 @@
     {
       "name": "Infinitely Slow Power",
       "description": "The Radioisotope Thermoelectric Generator is fueled by Pellets of RTG Fuel and makes EU. Pellets of RTG Fuel are fairly expensive to make, but they are not depleted or used up while making EU in this. However, at max speed with 6 Pellets of RTG Fuel inside of it, it generates only 32EU/t.",
-      "x": 195,
-      "y": 89,
+      "x": 190,
+      "y": 124,
       "icon": {
         "id": "IC2:blockGenerator",
         "damage": 6
       },
       "prerequisites": [
-        "Aresium"
+        "Not Bird Friendly"
       ],
       "tasks": [
         {
@@ -390,6 +403,7 @@
         {
           "type": "DETECT",
           "description": "Make MOX Nuclear Fuel",
+          "longDescription": "Depleted MOX Fuel Rods give more Plutonium than Uranium Fuel Rods do.",
           "items": [
             {
               "item": {
@@ -402,14 +416,14 @@
     },
     {
       "name": "I, Ridium",
-      "description": "Iridium is probably the hardest item to get at this part of the game. It needs 80M RF, plus 1 Pellet of RTG Fuel and a MOX Nuclear Fuel. Once you have one, I recommend using the Replicator to get more instead of making it out of the MOX and RTG.",
-      "x": 157,
-      "y": 145,
+      "description": "Iridium is probably the hardest item to get at this part of the game. It needs 80M RF, plus 1 Pellet of RTG Fuel and a MOX Nuclear Fuel. You definitely want to use tons of Lasers for this, rather than just having 6. Once you have one, I recommend using the Replicator to get more instead of making it out of the MOX and RTG.",
+      "x": 125,
+      "y": 156,
       "icon": {
         "id": "IC2:itemOreIridium"
       },
       "prerequisites": [
-        "Aresium"
+        "Not Bird Friendly"
       ],
       "tasks": [
         {
@@ -429,13 +443,13 @@
     {
       "name": "Plug and Play",
       "description": "Now that you have Pellets of RTG Fuel available, you can make Big Reactors. Big Reactors are much easier to set up and run, with no chance of exploding.",
-      "x": 123,
-      "y": 126,
+      "x": 125,
+      "y": 122,
       "icon": {
         "id": "BigReactors:YelloriumFuelRod"
       },
       "prerequisites": [
-        "Aresium"
+        "Not Bird Friendly"
       ],
       "tasks": [
         {
@@ -485,8 +499,8 @@
     {
       "name": "Grand Dad?!",
       "description": "Bedrockium is the toughest material known to mankind. While not used in very many recipes, the things it does make are very, very cool.",
-      "x": 195,
-      "y": 127,
+      "x": 190,
+      "y": 88,
       "icon": {
         "id": "ExtraUtilities:bedrockiumIngot"
       },
@@ -505,6 +519,98 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Diggiest Diggiest Hole",
+      "description": "The Iridium Drill is the highest-tier drill in IC2. It is faster than the Diamond Drill, but uses more EU.",
+      "x": 158,
+      "y": 176,
+      "icon": {
+        "id": "IC2:itemToolIridiumDrill",
+        "damage": 26
+      },
+      "prerequisites": [
+        "{Miscallaneous Machines}[Diggier Diggier Hole]",
+        "I, Ridium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Iridium Drill",
+          "longDescription": "While holding the Mode Switch Key (see the controls options), you can right click with the Iridium Drill to toggle between Silk Touch and Fortune III on the drill.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemToolIridiumDrill",
+                "damage": 26,
+                "nbt": "{ench:[0:{lvl:3s,id:35s}]}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Not Bird Friendly",
+      "description": "Pellets of RTG Fuel are used in several recipes. ",
+      "x": 158,
+      "y": 137,
+      "icon": {
+        "id": "IC2:itemRTGPellet"
+      },
+      "prerequisites": [
+        "Aresium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Pellets of RTG Fuel",
+          "longDescription": "It is also used to make infinite energy in the Radioisotope Thermoelectric Generator.",
+          "items": [
+            {
+              "item": {
+                "id": "IC2:itemRTGPellet"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "I\u0027m Different!",
+      "description": "The Portal Gun allows you to use your two mouse buttons to shoot two linked portals. Enter one, exit the other. ",
+      "x": 191,
+      "y": 155,
+      "icon": {
+        "id": "PortalGun:PortalGunBlue"
+      },
+      "prerequisites": [
+        "Not Bird Friendly"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make a Portal Gun",
+          "longDescription": "The regular Portal Gun is not specific to the player. If two people use the default Portal Gun, they would overwrite eachother\u0027s portals. The bacon Portal Gun IS player-specific, so no worries when you use that. The potato Portal Gun gives fun commentary, if you want that.",
+          "items": [
+            {
+              "item": {
+                "id": "PortalGun:PortalGunBlue"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "PortalGun:PortalTurret",
+          "damage": 1,
+          "amount": 4
         }
       ]
     }
